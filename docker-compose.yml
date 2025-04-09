@@ -1,0 +1,35 @@
+services:
+  dev-container-sidiff:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: dev-container-sidiff
+    # mem_limit: 10g
+    ports:
+      - "127.0.0.1:5000:3000" # HTTP access: https://localhost:3000/
+      # - "127.0.0.1:3001:3001" # HTTPS access: https://localhost:3001/
+      # - "127.0.0.1:3002:6901" # HTTPS access (direct KasmVNC, no audio): https://localhost:3002/
+    security_opt:
+      - seccomp=unconfined # modern GUI desktop apps have issues with the latest Docker and syscall compatibility
+    volumes:
+      - dev_container_data_sidiff:/config # user directory
+      # See Dockerfile for configuration description:
+      # - ./eclipse-workspace:/config/workspace/eclipse-workspace
+      - ./eclipse-workspace/.metadata/version.ini:/config/workspace/eclipse-workspace/.metadata/version.ini
+      - ./eclipse-workspace/.metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml:/config/workspace/eclipse-workspace/.metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml
+      - ./eclipse-workspace/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi:/config/workspace/eclipse-workspace/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
+      - ./eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/:/config/workspace/eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/
+      - ./eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/0.snap:/config/workspace/eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/0.snap
+      - ./eclipse-workspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.egit.core.prefs:/config/workspace/eclipse-workspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.egit.core.prefs
+      - ./eclipse-workspace/.metadata/.plugins/org.eclipse.debug.core/.launches/:/config/workspace/eclipse-workspace/.metadata/.plugins/org.eclipse.debug.core/.launches/
+      - ./eclipse-workspace/.metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml:/config/workspace/eclipse-workspace/.metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml
+    environment:
+      - PUID=1000 # user PUID
+      - PGID=1000 # group PGID
+      - TZ=Europe/Zurich # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
+      - TITLE=Dev-SiDiff # the page title displayed on the web browser
+      # - PASSWORD=nUuuDn*R6Q3$9^gzn0gR # HTTP Basic auth password, abc is default. If unset there will be no auth
+    shm_size: "1gb" # we set this to 1 gig to prevent modern web browsers from crashing
+
+volumes:
+  dev_container_data_sidiff:

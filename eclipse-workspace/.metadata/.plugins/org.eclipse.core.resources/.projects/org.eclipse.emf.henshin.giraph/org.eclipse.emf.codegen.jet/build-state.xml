@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<state>
+  <java target="platform:/resource/org.eclipse.emf.henshin.giraph/src/org/eclipse/emf/henshin/giraph/templates/BuildJarLaunchTemplate.java">
+    <template source="platform:/resource/org.eclipse.emf.henshin.giraph/templates/BuildJarLaunch.jet"/>
+  </java>
+  <java target="platform:/resource/org.eclipse.emf.henshin.giraph/src/org/eclipse/emf/henshin/giraph/templates/CompileXmlTemplate.java">
+    <template source="platform:/resource/org.eclipse.emf.henshin.giraph/templates/CompileXml.jet"/>
+  </java>
+  <java target="platform:/resource/org.eclipse.emf.henshin.giraph/src/org/eclipse/emf/henshin/giraph/templates/GetLibsXmlTemplate.java">
+    <template source="platform:/resource/org.eclipse.emf.henshin.giraph/templates/GetLibsXml.jet"/>
+  </java>
+  <java target="platform:/resource/org.eclipse.emf.henshin.giraph/src/org/eclipse/emf/henshin/giraph/templates/GiraphRuleTemplate.java">
+    <template source="platform:/resource/org.eclipse.emf.henshin.giraph/templates/GiraphRule.jet"/>
+  </java>
+  <java target="platform:/resource/org.eclipse.emf.henshin.giraph/src/org/eclipse/emf/henshin/giraph/templates/HenshinUtilTemplate.java">
+    <template source="platform:/resource/org.eclipse.emf.henshin.giraph/templates/HenshinUtil.jet"/>
+  </java>
+  <java target="platform:/resource/org.eclipse.emf.henshin.giraph/src/org/eclipse/emf/henshin/giraph/templates/InstallHadoopXmlTemplate.java">
+    <template source="platform:/resource/org.eclipse.emf.henshin.giraph/templates/InstallHadoopXml.jet"/>
+  </java>
+  <java target="platform:/resource/org.eclipse.emf.henshin.giraph/src/org/eclipse/emf/henshin/giraph/templates/LaunchConfTemplate.java">
+    <template source="platform:/resource/org.eclipse.emf.henshin.giraph/templates/LaunchConf.jet"/>
+  </java>
+  <java target="platform:/resource/org.eclipse.emf.henshin.giraph/src/org/eclipse/emf/henshin/giraph/templates/LaunchEnvXmlTemplate.java">
+    <template source="platform:/resource/org.eclipse.emf.henshin.giraph/templates/LaunchEnvXml.jet"/>
+  </java>
+  <java target="platform:/resource/org.eclipse.emf.henshin.giraph/src/org/eclipse/emf/henshin/giraph/templates/LaunchXmlTemplate.java">
+    <template source="platform:/resource/org.eclipse.emf.henshin.giraph/templates/LaunchXml.jet"/>
+  </java>
+  <java target="platform:/resource/org.eclipse.emf.henshin.giraph/src/org/eclipse/emf/henshin/giraph/templates/PomXmlTemplate.java">
+    <template source="platform:/resource/org.eclipse.emf.henshin.giraph/templates/PomXml.jet"/>
+  </java>
+</state>
