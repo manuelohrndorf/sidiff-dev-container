@@ -32,6 +32,7 @@ RUN apt-get update && apt-get install -y \
     wget \
     unzip \
 	dos2unix \
+    mesa-utils \
     git \
     openjdk-21-jdk && \
     apt-get clean && \
@@ -97,7 +98,7 @@ COPY ./eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/0.snap   
 # added Git projects
 COPY ./eclipse-workspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.egit.core.prefs    /config/workspace/eclipse-workspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.egit.core.prefs
 # launch configurations
-COPY ./eclipse-workspace/.metadata/.plugins/org.eclipse.debug.core/.launches/                                 /config/workspace/eclipse-workspace/.metadata/.plugins/org.eclipse.debug.core/.launches/
+COPY ./eclipse-workspace/.metadata/.plugins/org.eclipse.debug.core/.launches/Eclipse-SiDiff.launch            /config/workspace/eclipse-workspace/.metadata/.plugins/org.eclipse.debug.core/.launches/Eclipse-SiDiff.launch
 # launch configurations
 COPY ./eclipse-workspace/.metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml               /config/workspace/eclipse-workspace/.metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml
 
