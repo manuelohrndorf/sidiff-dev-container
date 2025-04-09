@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_4nJ1oBV-EfCf5NuzPRiWMQ" name="SET_ATTRIBUTE_EReference_ResolveProxies" description="Sets EReference ResolveProxies">
+  <imports href="http://www.eclipse.org/emf/2002/Ecore#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_4nJ1oRV-EfCf5NuzPRiWMQ" name="setEReferenceResolveProxies" description="Sets the EAttribute resolveProxies">
+    <parameters xmi:id="_4nJ1ohV-EfCf5NuzPRiWMQ" name="Selected" kind="IN">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </parameters>
+    <parameters xmi:id="_4nJ1oxV-EfCf5NuzPRiWMQ" name="ResolveProxies" kind="OUT">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    </parameters>
+    <lhs xmi:id="_4nJ1pBV-EfCf5NuzPRiWMQ" name="Lhs">
+      <nodes xmi:id="_4nJ1pRV-EfCf5NuzPRiWMQ" name="Selected">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_4nJ1phV-EfCf5NuzPRiWMQ" name="Rhs">
+      <nodes xmi:id="_4nJ1pxV-EfCf5NuzPRiWMQ" name="Selected">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+        <attributes xmi:id="_4nJ1qBV-EfCf5NuzPRiWMQ" value="ResolveProxies">
+          <type href="http://www.eclipse.org/emf/2002/Ecore#//EReference/resolveProxies"/>
+        </attributes>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_4nJ1qRV-EfCf5NuzPRiWMQ" origin="_4nJ1pRV-EfCf5NuzPRiWMQ" image="_4nJ1pxV-EfCf5NuzPRiWMQ"/>
+  </units>
+  <units xsi:type="henshin:PriorityUnit" xmi:id="_4nJ1qhV-EfCf5NuzPRiWMQ" name="mainUnit" subUnits="_4nJ1oRV-EfCf5NuzPRiWMQ">
+    <parameters xmi:id="_4nJ1qxV-EfCf5NuzPRiWMQ" name="selectedEObject">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </parameters>
+    <parameters xmi:id="_4nJ1rBV-EfCf5NuzPRiWMQ" name="ResolveProxies">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    </parameters>
+    <parameterMappings xmi:id="_4nJ1rRV-EfCf5NuzPRiWMQ" source="_4nJ1qxV-EfCf5NuzPRiWMQ" target="_4nJ1ohV-EfCf5NuzPRiWMQ"/>
+    <parameterMappings xmi:id="_4nJ1rhV-EfCf5NuzPRiWMQ" source="_4nJ1rBV-EfCf5NuzPRiWMQ" target="_4nJ1oxV-EfCf5NuzPRiWMQ"/>
+  </units>
+</henshin:Module>

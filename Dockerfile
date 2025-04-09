@@ -34,7 +34,8 @@ RUN apt-get update && apt-get install -y \
 	dos2unix \
     mesa-utils \
     git \
-    openjdk-21-jdk && \
+    openjdk-21-jdk \
+    libwebkit2gtk-4.1-0 && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
@@ -85,12 +86,10 @@ RUN git clone --branch main https://github.com/manuelohrndorf/sidiff-matching $H
 RUN git clone --branch master https://github.com/manuelohrndorf/sidiff-lifting.git $HOME/git/sidiff-lifting
 #RUN git clone --branch master https://gitlab.eclipse.org/eclipse/papyrus/org.eclipse.papyrus-classic.git
 
+##### /config/workspace/eclipse-workspace #####
+
 # Eclipse workbench version
 COPY ./eclipse-workspace/.metadata/version.ini                                                                /config/workspace/eclipse-workspace/.metadata/version.ini
-# working sets
-COPY ./eclipse-workspace/.metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml                          /config/workspace/eclipse-workspace/.metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml
-# Eclipse UI layout and settings
-COPY ./eclipse-workspace/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi                            /config/workspace/eclipse-workspace/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
 # imported workspace projects
 COPY ./eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/                             /config/workspace/eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/
 # snapshot of the resource tree
@@ -101,6 +100,19 @@ COPY ./eclipse-workspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/o
 COPY ./eclipse-workspace/.metadata/.plugins/org.eclipse.debug.core/.launches/Eclipse-SiDiff.launch            /config/workspace/eclipse-workspace/.metadata/.plugins/org.eclipse.debug.core/.launches/Eclipse-SiDiff.launch
 # launch configurations
 COPY ./eclipse-workspace/.metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml               /config/workspace/eclipse-workspace/.metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml
+# Eclipse UI layout and settings
+COPY ./eclipse-workspace/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi                            /config/workspace/eclipse-workspace/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
+# working sets
+COPY ./eclipse-workspace/.metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml                          /config/workspace/eclipse-workspace/.metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml
+
+##### /config/workspace/runtime-eclipse-workspace-sidiff #####
+
+# Eclipse workbench version
+COPY ./runtime-eclipse-workspace-sidiff/.metadata/version.ini                                        /config/workspace/runtime-eclipse-workspace-sidiff/.metadata/version.ini
+# imported workspace projects
+COPY ./runtime-eclipse-workspace-sidiff/.metadata/.plugins/org.eclipse.core.resources/.projects/     /config/workspace/runtime-eclipse-workspace-sidiff/.metadata/.plugins/org.eclipse.core.resources/.projects/
+# Eclipse UI layout and settings
+COPY ./runtime-eclipse-workspace-sidiff/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi    /config/workspace/runtime-eclipse-workspace-sidiff/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
 
 USER root
-RUN chown -R $PUID:$PGID /config/workspace/eclipse-workspace/.metadata
+RUN chown -R $PUID:$PGID /config/workspace/

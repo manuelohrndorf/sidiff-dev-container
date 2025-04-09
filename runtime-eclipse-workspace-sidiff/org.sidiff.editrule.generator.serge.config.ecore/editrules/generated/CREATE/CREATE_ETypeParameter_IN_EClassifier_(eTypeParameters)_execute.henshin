@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_4e4DYBV-EfCf5NuzPRiWMQ" name="CREATE_ETypeParameter_IN_EClassifier_(eTypeParameters)" description="Creates one ETypeParameter in EClassifier">
+  <annotations xmi:id="_4e4DYRV-EfCf5NuzPRiWMQ" key="INVERSE" value="DELETE_ETypeParameter_IN_EClassifier_(eTypeParameters)"/>
+  <imports href="http://www.eclipse.org/emf/2002/Ecore#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_4e4DYhV-EfCf5NuzPRiWMQ" name="createETypeParameter_IN_EClassifier" description="creates one ETypeParameter in the context: EClassifier">
+    <parameters xmi:id="_4e4DYxV-EfCf5NuzPRiWMQ" name="Selected" kind="IN">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EClassifier"/>
+    </parameters>
+    <parameters xmi:id="_4e4DZBV-EfCf5NuzPRiWMQ" name="New" kind="OUT">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//ETypeParameter"/>
+    </parameters>
+    <parameters xmi:id="_4e4DZRV-EfCf5NuzPRiWMQ" name="Name" kind="OUT">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <lhs xmi:id="_4e4DZhV-EfCf5NuzPRiWMQ" name="Lhs">
+      <nodes xmi:id="_4e4DZxV-EfCf5NuzPRiWMQ" name="Selected">
+        <annotations xmi:id="_4e4DaBV-EfCf5NuzPRiWMQ" key="SERGE_" value="CONTEXT"/>
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EClassifier"/>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_4e4DaRV-EfCf5NuzPRiWMQ" name="Rhs">
+      <nodes xmi:id="_4e4DahV-EfCf5NuzPRiWMQ" name="Selected" outgoing="_4e4DbxV-EfCf5NuzPRiWMQ">
+        <annotations xmi:id="_4e4DaxV-EfCf5NuzPRiWMQ" key="SERGE_" value="CONTEXT"/>
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EClassifier"/>
+      </nodes>
+      <nodes xmi:id="_4e4DbBV-EfCf5NuzPRiWMQ" name="New" incoming="_4e4DbxV-EfCf5NuzPRiWMQ">
+        <annotations xmi:id="_4e4DbRV-EfCf5NuzPRiWMQ" key="SERGE_" value="FOCUS"/>
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//ETypeParameter"/>
+        <attributes xmi:id="_4e4DbhV-EfCf5NuzPRiWMQ" value="Name">
+          <type href="http://www.eclipse.org/emf/2002/Ecore#//ENamedElement/name"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_4e4DbxV-EfCf5NuzPRiWMQ" source="_4e4DahV-EfCf5NuzPRiWMQ" target="_4e4DbBV-EfCf5NuzPRiWMQ">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EClassifier/eTypeParameters"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_4e4DcBV-EfCf5NuzPRiWMQ" origin="_4e4DZxV-EfCf5NuzPRiWMQ" image="_4e4DahV-EfCf5NuzPRiWMQ"/>
+  </units>
+  <units xsi:type="henshin:PriorityUnit" xmi:id="_4e4DcRV-EfCf5NuzPRiWMQ" name="mainUnit" subUnits="_4e4DYhV-EfCf5NuzPRiWMQ">
+    <parameters xmi:id="_4e4DchV-EfCf5NuzPRiWMQ" name="selectedEObject">
+      <annotations xmi:id="_4e4DcxV-EfCf5NuzPRiWMQ" key="INVERSE" value="selectedEObject"/>
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EClassifier"/>
+    </parameters>
+    <parameters xmi:id="_4e4DdBV-EfCf5NuzPRiWMQ" name="New">
+      <annotations xmi:id="_4e4DdRV-EfCf5NuzPRiWMQ" key="INVERSE" value="ToBeDeleted"/>
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//ETypeParameter"/>
+    </parameters>
+    <parameters xmi:id="_4e4DdhV-EfCf5NuzPRiWMQ" name="Name">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <parameterMappings xmi:id="_4e4DdxV-EfCf5NuzPRiWMQ" source="_4e4DchV-EfCf5NuzPRiWMQ" target="_4e4DYxV-EfCf5NuzPRiWMQ"/>
+    <parameterMappings xmi:id="_4e4DeBV-EfCf5NuzPRiWMQ" source="_4e4DZBV-EfCf5NuzPRiWMQ" target="_4e4DdBV-EfCf5NuzPRiWMQ"/>
+    <parameterMappings xmi:id="_4e4DeRV-EfCf5NuzPRiWMQ" source="_4e4DdhV-EfCf5NuzPRiWMQ" target="_4e4DZRV-EfCf5NuzPRiWMQ"/>
+  </units>
+</henshin:Module>

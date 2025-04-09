@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_4pk3gBV-EfCf5NuzPRiWMQ" name="CREATE_EAnnotation_IN_EModelElement_(eAnnotations)" description="Creates one EAnnotation in EModelElement">
+  <annotations xmi:id="_4pk3gRV-EfCf5NuzPRiWMQ" key="INVERSE" value="DELETE_EAnnotation_IN_EModelElement_(eAnnotations)"/>
+  <imports href="http://www.eclipse.org/emf/2002/Ecore#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_4pk3ghV-EfCf5NuzPRiWMQ" name="createEAnnotation_IN_EModelElement" description="creates one EAnnotation in the context: EModelElement">
+    <parameters xmi:id="_4pk3gxV-EfCf5NuzPRiWMQ" name="Selected" kind="IN">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EModelElement"/>
+    </parameters>
+    <parameters xmi:id="_4pk3hBV-EfCf5NuzPRiWMQ" name="New" kind="OUT">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EAnnotation"/>
+    </parameters>
+    <parameters xmi:id="_4pk3hRV-EfCf5NuzPRiWMQ" name="Source" kind="OUT">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <lhs xmi:id="_4pk3hhV-EfCf5NuzPRiWMQ" name="Lhs">
+      <nodes xmi:id="_4pk3hxV-EfCf5NuzPRiWMQ" name="Selected">
+        <annotations xmi:id="_4pk3iBV-EfCf5NuzPRiWMQ" key="SERGE_" value="CONTEXT"/>
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EModelElement"/>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_4pk3iRV-EfCf5NuzPRiWMQ" name="Rhs">
+      <nodes xmi:id="_4pk3ihV-EfCf5NuzPRiWMQ" name="Selected" incoming="_4pk3kBV-EfCf5NuzPRiWMQ" outgoing="_4pk3jxV-EfCf5NuzPRiWMQ">
+        <annotations xmi:id="_4pk3ixV-EfCf5NuzPRiWMQ" key="SERGE_" value="CONTEXT"/>
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EModelElement"/>
+      </nodes>
+      <nodes xmi:id="_4pk3jBV-EfCf5NuzPRiWMQ" name="New" incoming="_4pk3jxV-EfCf5NuzPRiWMQ" outgoing="_4pk3kBV-EfCf5NuzPRiWMQ">
+        <annotations xmi:id="_4pk3jRV-EfCf5NuzPRiWMQ" key="SERGE_" value="FOCUS"/>
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EAnnotation"/>
+        <attributes xmi:id="_4pk3jhV-EfCf5NuzPRiWMQ" value="Source">
+          <type href="http://www.eclipse.org/emf/2002/Ecore#//EAnnotation/source"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_4pk3jxV-EfCf5NuzPRiWMQ" source="_4pk3ihV-EfCf5NuzPRiWMQ" target="_4pk3jBV-EfCf5NuzPRiWMQ">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EModelElement/eAnnotations"/>
+      </edges>
+      <edges xmi:id="_4pk3kBV-EfCf5NuzPRiWMQ" source="_4pk3jBV-EfCf5NuzPRiWMQ" target="_4pk3ihV-EfCf5NuzPRiWMQ">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EAnnotation/eModelElement"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_4pk3kRV-EfCf5NuzPRiWMQ" origin="_4pk3hxV-EfCf5NuzPRiWMQ" image="_4pk3ihV-EfCf5NuzPRiWMQ"/>
+  </units>
+  <units xsi:type="henshin:PriorityUnit" xmi:id="_4pk3khV-EfCf5NuzPRiWMQ" name="mainUnit" subUnits="_4pk3ghV-EfCf5NuzPRiWMQ">
+    <parameters xmi:id="_4pk3kxV-EfCf5NuzPRiWMQ" name="selectedEObject">
+      <annotations xmi:id="_4pk3lBV-EfCf5NuzPRiWMQ" key="INVERSE" value="selectedEObject"/>
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EModelElement"/>
+    </parameters>
+    <parameters xmi:id="_4pk3lRV-EfCf5NuzPRiWMQ" name="New">
+      <annotations xmi:id="_4pk3lhV-EfCf5NuzPRiWMQ" key="INVERSE" value="ToBeDeleted"/>
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EAnnotation"/>
+    </parameters>
+    <parameters xmi:id="_4pk3lxV-EfCf5NuzPRiWMQ" name="Source">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <parameterMappings xmi:id="_4pk3mBV-EfCf5NuzPRiWMQ" source="_4pk3kxV-EfCf5NuzPRiWMQ" target="_4pk3gxV-EfCf5NuzPRiWMQ"/>
+    <parameterMappings xmi:id="_4pk3mRV-EfCf5NuzPRiWMQ" source="_4pk3hBV-EfCf5NuzPRiWMQ" target="_4pk3lRV-EfCf5NuzPRiWMQ"/>
+    <parameterMappings xmi:id="_4pk3mhV-EfCf5NuzPRiWMQ" source="_4pk3lxV-EfCf5NuzPRiWMQ" target="_4pk3hRV-EfCf5NuzPRiWMQ"/>
+  </units>
+</henshin:Module>

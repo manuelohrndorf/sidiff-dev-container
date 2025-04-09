@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_4jh54BV-EfCf5NuzPRiWMQ" name="MOVE_DOWN_EGenericType_FROM_EGenericType_(eTypeArguments)_TO_EGenericType_(eTypeArguments)" description="MOVE DOWNWARDs EGenericType from EGenericType(Reference:eTypeArguments) to EGenericType(Reference:eTypeArguments">
+  <imports href="http://www.eclipse.org/emf/2002/Ecore#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_4jh54RV-EfCf5NuzPRiWMQ" name="moveDownEGenericType_FROM_EGenericType_eTypeArguments_TO_EGenericType_EGenericType" description="Moves down EGenericType from EGenericType(Reference:eTypeArguments) toEGenericType(Reference:EGenericType)">
+    <parameters xmi:id="_4jh54hV-EfCf5NuzPRiWMQ" name="Selected" kind="IN">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EGenericType"/>
+    </parameters>
+    <parameters xmi:id="_4jh54xV-EfCf5NuzPRiWMQ" name="OldSource" kind="IN">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EGenericType"/>
+    </parameters>
+    <parameters xmi:id="_4jh55BV-EfCf5NuzPRiWMQ" name="NewSource" kind="IN">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EGenericType"/>
+    </parameters>
+    <lhs xmi:id="_4jh55RV-EfCf5NuzPRiWMQ" name="Lhs">
+      <nodes xmi:id="_4jh55hV-EfCf5NuzPRiWMQ" name="Selected" incoming="_4jh56RV-EfCf5NuzPRiWMQ">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EGenericType"/>
+      </nodes>
+      <nodes xmi:id="_4jh55xV-EfCf5NuzPRiWMQ" name="OldSource" outgoing="_4jh56RV-EfCf5NuzPRiWMQ">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EGenericType"/>
+      </nodes>
+      <nodes xmi:id="_4jh56BV-EfCf5NuzPRiWMQ" name="NewSource">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EGenericType"/>
+      </nodes>
+      <edges xmi:id="_4jh56RV-EfCf5NuzPRiWMQ" source="_4jh55xV-EfCf5NuzPRiWMQ" target="_4jh55hV-EfCf5NuzPRiWMQ">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EGenericType/eTypeArguments"/>
+      </edges>
+      <formula xsi:type="henshin:NestedCondition" xmi:id="_4jh56hV-EfCf5NuzPRiWMQ">
+        <conclusion xmi:id="_4jh56xV-EfCf5NuzPRiWMQ" name="cyclePath">
+          <nodes xmi:id="_4jh57BV-EfCf5NuzPRiWMQ" name="OldSource" outgoing="_4jh57hV-EfCf5NuzPRiWMQ">
+            <type href="http://www.eclipse.org/emf/2002/Ecore#//EGenericType"/>
+          </nodes>
+          <nodes xmi:id="_4jh57RV-EfCf5NuzPRiWMQ" name="NewSource" incoming="_4jh57hV-EfCf5NuzPRiWMQ">
+            <type href="http://www.eclipse.org/emf/2002/Ecore#//EGenericType"/>
+          </nodes>
+          <edges xmi:id="_4jh57hV-EfCf5NuzPRiWMQ" source="_4jh57BV-EfCf5NuzPRiWMQ" target="_4jh57RV-EfCf5NuzPRiWMQ">
+            <type href="http://www.eclipse.org/emf/2002/Ecore#//EGenericType/eTypeArguments"/>
+          </edges>
+        </conclusion>
+        <mappings xmi:id="_4jh57xV-EfCf5NuzPRiWMQ" origin="_4jh56BV-EfCf5NuzPRiWMQ" image="_4jh57RV-EfCf5NuzPRiWMQ"/>
+        <mappings xmi:id="_4jh58BV-EfCf5NuzPRiWMQ" origin="_4jh55xV-EfCf5NuzPRiWMQ" image="_4jh57BV-EfCf5NuzPRiWMQ"/>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_4jh58RV-EfCf5NuzPRiWMQ" name="Rhs">
+      <nodes xmi:id="_4jh58hV-EfCf5NuzPRiWMQ" name="Selected" incoming="_4jh59RV-EfCf5NuzPRiWMQ">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EGenericType"/>
+      </nodes>
+      <nodes xmi:id="_4jh58xV-EfCf5NuzPRiWMQ" name="OldSource">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EGenericType"/>
+      </nodes>
+      <nodes xmi:id="_4jh59BV-EfCf5NuzPRiWMQ" name="NewSource" outgoing="_4jh59RV-EfCf5NuzPRiWMQ">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EGenericType"/>
+      </nodes>
+      <edges xmi:id="_4jh59RV-EfCf5NuzPRiWMQ" source="_4jh59BV-EfCf5NuzPRiWMQ" target="_4jh58hV-EfCf5NuzPRiWMQ">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EGenericType/eTypeArguments"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_4jh59hV-EfCf5NuzPRiWMQ" origin="_4jh55hV-EfCf5NuzPRiWMQ" image="_4jh58hV-EfCf5NuzPRiWMQ"/>
+    <mappings xmi:id="_4jh59xV-EfCf5NuzPRiWMQ" origin="_4jh55xV-EfCf5NuzPRiWMQ" image="_4jh58xV-EfCf5NuzPRiWMQ"/>
+    <mappings xmi:id="_4jh5-BV-EfCf5NuzPRiWMQ" origin="_4jh56BV-EfCf5NuzPRiWMQ" image="_4jh59BV-EfCf5NuzPRiWMQ"/>
+  </units>
+  <units xsi:type="henshin:PriorityUnit" xmi:id="_4jh5-RV-EfCf5NuzPRiWMQ" name="mainUnit" subUnits="_4jh54RV-EfCf5NuzPRiWMQ">
+    <parameters xmi:id="_4jh5-hV-EfCf5NuzPRiWMQ" name="selectedEObject">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EGenericType"/>
+    </parameters>
+    <parameters xmi:id="_4jh5-xV-EfCf5NuzPRiWMQ" name="OldSource">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EGenericType"/>
+    </parameters>
+    <parameters xmi:id="_4jh5_BV-EfCf5NuzPRiWMQ" name="NewSource">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EGenericType"/>
+    </parameters>
+    <parameterMappings xmi:id="_4jh5_RV-EfCf5NuzPRiWMQ" source="_4jh5-hV-EfCf5NuzPRiWMQ" target="_4jh54hV-EfCf5NuzPRiWMQ"/>
+    <parameterMappings xmi:id="_4jh5_hV-EfCf5NuzPRiWMQ" source="_4jh5-xV-EfCf5NuzPRiWMQ" target="_4jh54xV-EfCf5NuzPRiWMQ"/>
+    <parameterMappings xmi:id="_4jh5_xV-EfCf5NuzPRiWMQ" source="_4jh5_BV-EfCf5NuzPRiWMQ" target="_4jh55BV-EfCf5NuzPRiWMQ"/>
+  </units>
+</henshin:Module>

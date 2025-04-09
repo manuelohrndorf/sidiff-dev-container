@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_4kY1gBV-EfCf5NuzPRiWMQ" name="MOVE_UP_EAnnotation_FROM_EModelElement_(eAnnotations)_TO_EModelElement_(eAnnotations)" description="MOVE UPWARDs EAnnotation from EModelElement(Reference:eAnnotations) to EModelElement(Reference:eAnnotations">
+  <imports href="http://www.eclipse.org/emf/2002/Ecore#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_4kY1gRV-EfCf5NuzPRiWMQ" name="moveUpEAnnotation_FROM_EModelElement_eAnnotations_TO_EModelElement_EModelElement" description="Moves up EAnnotation from EModelElement(Reference:eAnnotations) toEModelElement(Reference:EModelElement)">
+    <parameters xmi:id="_4kY1ghV-EfCf5NuzPRiWMQ" name="Selected" kind="IN">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EAnnotation"/>
+    </parameters>
+    <parameters xmi:id="_4kY1gxV-EfCf5NuzPRiWMQ" name="OldSource" kind="IN">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EModelElement"/>
+    </parameters>
+    <parameters xmi:id="_4kY1hBV-EfCf5NuzPRiWMQ" name="NewSource" kind="IN">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EModelElement"/>
+    </parameters>
+    <lhs xmi:id="_4kY1hRV-EfCf5NuzPRiWMQ" name="Lhs">
+      <nodes xmi:id="_4kY1hhV-EfCf5NuzPRiWMQ" name="Selected" incoming="_4kY1iRV-EfCf5NuzPRiWMQ" outgoing="_4kY1ihV-EfCf5NuzPRiWMQ">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EAnnotation"/>
+      </nodes>
+      <nodes xmi:id="_4kY1hxV-EfCf5NuzPRiWMQ" name="OldSource" incoming="_4kY1ihV-EfCf5NuzPRiWMQ" outgoing="_4kY1iRV-EfCf5NuzPRiWMQ">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EModelElement"/>
+      </nodes>
+      <nodes xmi:id="_4kY1iBV-EfCf5NuzPRiWMQ" name="NewSource">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EModelElement"/>
+      </nodes>
+      <edges xmi:id="_4kY1iRV-EfCf5NuzPRiWMQ" source="_4kY1hxV-EfCf5NuzPRiWMQ" target="_4kY1hhV-EfCf5NuzPRiWMQ">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EModelElement/eAnnotations"/>
+      </edges>
+      <edges xmi:id="_4kY1ihV-EfCf5NuzPRiWMQ" source="_4kY1hhV-EfCf5NuzPRiWMQ" target="_4kY1hxV-EfCf5NuzPRiWMQ">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EAnnotation/eModelElement"/>
+      </edges>
+      <formula xsi:type="henshin:NestedCondition" xmi:id="_4kY1ixV-EfCf5NuzPRiWMQ">
+        <conclusion xmi:id="_4kY1jBV-EfCf5NuzPRiWMQ" name="cyclePath">
+          <nodes xmi:id="_4kY1jRV-EfCf5NuzPRiWMQ" name="OldSource" incoming="_4kY1jxV-EfCf5NuzPRiWMQ">
+            <type href="http://www.eclipse.org/emf/2002/Ecore#//EModelElement"/>
+          </nodes>
+          <nodes xmi:id="_4kY1jhV-EfCf5NuzPRiWMQ" name="NewSource" outgoing="_4kY1jxV-EfCf5NuzPRiWMQ">
+            <type href="http://www.eclipse.org/emf/2002/Ecore#//EModelElement"/>
+          </nodes>
+          <edges xmi:id="_4kY1jxV-EfCf5NuzPRiWMQ" source="_4kY1jhV-EfCf5NuzPRiWMQ" target="_4kY1jRV-EfCf5NuzPRiWMQ">
+            <type href="http://www.eclipse.org/emf/2002/Ecore#//EModelElement/eAnnotations"/>
+          </edges>
+        </conclusion>
+        <mappings xmi:id="_4kY1kBV-EfCf5NuzPRiWMQ" origin="_4kY1iBV-EfCf5NuzPRiWMQ" image="_4kY1jhV-EfCf5NuzPRiWMQ"/>
+        <mappings xmi:id="_4kY1kRV-EfCf5NuzPRiWMQ" origin="_4kY1hxV-EfCf5NuzPRiWMQ" image="_4kY1jRV-EfCf5NuzPRiWMQ"/>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_4kY1khV-EfCf5NuzPRiWMQ" name="Rhs">
+      <nodes xmi:id="_4kY1kxV-EfCf5NuzPRiWMQ" name="Selected" incoming="_4kY1lhV-EfCf5NuzPRiWMQ" outgoing="_4kY1lxV-EfCf5NuzPRiWMQ">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EAnnotation"/>
+      </nodes>
+      <nodes xmi:id="_4kY1lBV-EfCf5NuzPRiWMQ" name="OldSource">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EModelElement"/>
+      </nodes>
+      <nodes xmi:id="_4kY1lRV-EfCf5NuzPRiWMQ" name="NewSource" incoming="_4kY1lxV-EfCf5NuzPRiWMQ" outgoing="_4kY1lhV-EfCf5NuzPRiWMQ">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EModelElement"/>
+      </nodes>
+      <edges xmi:id="_4kY1lhV-EfCf5NuzPRiWMQ" source="_4kY1lRV-EfCf5NuzPRiWMQ" target="_4kY1kxV-EfCf5NuzPRiWMQ">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EModelElement/eAnnotations"/>
+      </edges>
+      <edges xmi:id="_4kY1lxV-EfCf5NuzPRiWMQ" source="_4kY1kxV-EfCf5NuzPRiWMQ" target="_4kY1lRV-EfCf5NuzPRiWMQ">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EAnnotation/eModelElement"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_4kY1mBV-EfCf5NuzPRiWMQ" origin="_4kY1hhV-EfCf5NuzPRiWMQ" image="_4kY1kxV-EfCf5NuzPRiWMQ"/>
+    <mappings xmi:id="_4kY1mRV-EfCf5NuzPRiWMQ" origin="_4kY1hxV-EfCf5NuzPRiWMQ" image="_4kY1lBV-EfCf5NuzPRiWMQ"/>
+    <mappings xmi:id="_4kY1mhV-EfCf5NuzPRiWMQ" origin="_4kY1iBV-EfCf5NuzPRiWMQ" image="_4kY1lRV-EfCf5NuzPRiWMQ"/>
+  </units>
+  <units xsi:type="henshin:PriorityUnit" xmi:id="_4kY1mxV-EfCf5NuzPRiWMQ" name="mainUnit" subUnits="_4kY1gRV-EfCf5NuzPRiWMQ">
+    <parameters xmi:id="_4kY1nBV-EfCf5NuzPRiWMQ" name="selectedEObject">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EAnnotation"/>
+    </parameters>
+    <parameters xmi:id="_4kY1nRV-EfCf5NuzPRiWMQ" name="OldSource">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EModelElement"/>
+    </parameters>
+    <parameters xmi:id="_4kY1nhV-EfCf5NuzPRiWMQ" name="NewSource">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EModelElement"/>
+    </parameters>
+    <parameterMappings xmi:id="_4kY1nxV-EfCf5NuzPRiWMQ" source="_4kY1nBV-EfCf5NuzPRiWMQ" target="_4kY1ghV-EfCf5NuzPRiWMQ"/>
+    <parameterMappings xmi:id="_4kY1oBV-EfCf5NuzPRiWMQ" source="_4kY1nRV-EfCf5NuzPRiWMQ" target="_4kY1gxV-EfCf5NuzPRiWMQ"/>
+    <parameterMappings xmi:id="_4kY1oRV-EfCf5NuzPRiWMQ" source="_4kY1nhV-EfCf5NuzPRiWMQ" target="_4kY1hBV-EfCf5NuzPRiWMQ"/>
+  </units>
+</henshin:Module>

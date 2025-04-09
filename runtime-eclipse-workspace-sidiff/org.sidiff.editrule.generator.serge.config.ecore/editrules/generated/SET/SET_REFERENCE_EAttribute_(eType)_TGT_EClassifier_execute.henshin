@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_4pNEEBV-EfCf5NuzPRiWMQ" name="SET_REFERENCE_EAttribute_(eType)_TGT_EClassifier" description="Sets EAttribute's reference eType the target EClassifier">
+  <annotations xmi:id="_4pNEERV-EfCf5NuzPRiWMQ" key="INVERSE" value="UNSET_REFERENCE_EAttribute_(eType)_TGT_EClassifier"/>
+  <imports href="http://www.eclipse.org/emf/2002/Ecore#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_4pNEEhV-EfCf5NuzPRiWMQ" name="setEAttribute_eType_TO_EClassifier" description="SetEAttributeRefeTypeToEClassifier">
+    <parameters xmi:id="_4pNEExV-EfCf5NuzPRiWMQ" name="Selected" kind="IN">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </parameters>
+    <parameters xmi:id="_4pNEFBV-EfCf5NuzPRiWMQ" name="NewTarget" kind="IN">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EClassifier"/>
+    </parameters>
+    <lhs xmi:id="_4pNEFRV-EfCf5NuzPRiWMQ" name="Lhs">
+      <nodes xmi:id="_4pNEFhV-EfCf5NuzPRiWMQ" name="Selected">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+      </nodes>
+      <nodes xmi:id="_4pNEFxV-EfCf5NuzPRiWMQ" name="NewTarget">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EClassifier"/>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_4pNEGBV-EfCf5NuzPRiWMQ" name="Rhs">
+      <nodes xmi:id="_4pNEGRV-EfCf5NuzPRiWMQ" name="Selected" outgoing="_4pNEGxV-EfCf5NuzPRiWMQ">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+      </nodes>
+      <nodes xmi:id="_4pNEGhV-EfCf5NuzPRiWMQ" name="NewTarget" incoming="_4pNEGxV-EfCf5NuzPRiWMQ">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EClassifier"/>
+      </nodes>
+      <edges xmi:id="_4pNEGxV-EfCf5NuzPRiWMQ" source="_4pNEGRV-EfCf5NuzPRiWMQ" target="_4pNEGhV-EfCf5NuzPRiWMQ">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//ETypedElement/eType"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_4pNEHBV-EfCf5NuzPRiWMQ" origin="_4pNEFhV-EfCf5NuzPRiWMQ" image="_4pNEGRV-EfCf5NuzPRiWMQ"/>
+    <mappings xmi:id="_4pNEHRV-EfCf5NuzPRiWMQ" origin="_4pNEFxV-EfCf5NuzPRiWMQ" image="_4pNEGhV-EfCf5NuzPRiWMQ"/>
+  </units>
+  <units xsi:type="henshin:PriorityUnit" xmi:id="_4pNEHhV-EfCf5NuzPRiWMQ" name="mainUnit" subUnits="_4pNEEhV-EfCf5NuzPRiWMQ">
+    <parameters xmi:id="_4pNEHxV-EfCf5NuzPRiWMQ" name="selectedEObject">
+      <annotations xmi:id="_4pNEIBV-EfCf5NuzPRiWMQ" key="INVERSE" value="selectedEObject"/>
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </parameters>
+    <parameters xmi:id="_4pNEIRV-EfCf5NuzPRiWMQ" name="NewTarget">
+      <annotations xmi:id="_4pNEIhV-EfCf5NuzPRiWMQ" key="INVERSE" value="NewTarget"/>
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EClassifier"/>
+    </parameters>
+    <parameterMappings xmi:id="_4pNEIxV-EfCf5NuzPRiWMQ" source="_4pNEHxV-EfCf5NuzPRiWMQ" target="_4pNEExV-EfCf5NuzPRiWMQ"/>
+    <parameterMappings xmi:id="_4pNEJBV-EfCf5NuzPRiWMQ" source="_4pNEIRV-EfCf5NuzPRiWMQ" target="_4pNEFBV-EfCf5NuzPRiWMQ"/>
+  </units>
+</henshin:Module>

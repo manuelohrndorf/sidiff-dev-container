@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_4o-akBV-EfCf5NuzPRiWMQ" name="SET_ATTRIBUTE_EReference_Ordered" description="Sets EReference Ordered">
+  <imports href="http://www.eclipse.org/emf/2002/Ecore#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_4o-akRV-EfCf5NuzPRiWMQ" name="setEReferenceOrdered" description="Sets the EAttribute ordered">
+    <parameters xmi:id="_4o-akhV-EfCf5NuzPRiWMQ" name="Selected" kind="IN">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </parameters>
+    <parameters xmi:id="_4o-akxV-EfCf5NuzPRiWMQ" name="Ordered" kind="OUT">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    </parameters>
+    <lhs xmi:id="_4o-alBV-EfCf5NuzPRiWMQ" name="Lhs">
+      <nodes xmi:id="_4o-alRV-EfCf5NuzPRiWMQ" name="Selected">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_4o-alhV-EfCf5NuzPRiWMQ" name="Rhs">
+      <nodes xmi:id="_4o-alxV-EfCf5NuzPRiWMQ" name="Selected">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+        <attributes xmi:id="_4o-amBV-EfCf5NuzPRiWMQ" value="Ordered">
+          <type href="http://www.eclipse.org/emf/2002/Ecore#//ETypedElement/ordered"/>
+        </attributes>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_4o-amRV-EfCf5NuzPRiWMQ" origin="_4o-alRV-EfCf5NuzPRiWMQ" image="_4o-alxV-EfCf5NuzPRiWMQ"/>
+  </units>
+  <units xsi:type="henshin:PriorityUnit" xmi:id="_4o-amhV-EfCf5NuzPRiWMQ" name="mainUnit" subUnits="_4o-akRV-EfCf5NuzPRiWMQ">
+    <parameters xmi:id="_4o-amxV-EfCf5NuzPRiWMQ" name="selectedEObject">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </parameters>
+    <parameters xmi:id="_4o-anBV-EfCf5NuzPRiWMQ" name="Ordered">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    </parameters>
+    <parameterMappings xmi:id="_4o-anRV-EfCf5NuzPRiWMQ" source="_4o-amxV-EfCf5NuzPRiWMQ" target="_4o-akhV-EfCf5NuzPRiWMQ"/>
+    <parameterMappings xmi:id="_4o-anhV-EfCf5NuzPRiWMQ" source="_4o-anBV-EfCf5NuzPRiWMQ" target="_4o-akxV-EfCf5NuzPRiWMQ"/>
+  </units>
+</henshin:Module>

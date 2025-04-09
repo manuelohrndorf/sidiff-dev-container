@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_4pRVgBV-EfCf5NuzPRiWMQ" name="SET_ATTRIBUTE_EClass_Interface" description="Sets EClass Interface">
+  <imports href="http://www.eclipse.org/emf/2002/Ecore#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_4pRVgRV-EfCf5NuzPRiWMQ" name="setEClassInterface" description="Sets the EAttribute interface">
+    <parameters xmi:id="_4pRVghV-EfCf5NuzPRiWMQ" name="Selected" kind="IN">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </parameters>
+    <parameters xmi:id="_4pRVgxV-EfCf5NuzPRiWMQ" name="Interface" kind="OUT">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    </parameters>
+    <lhs xmi:id="_4pRVhBV-EfCf5NuzPRiWMQ" name="Lhs">
+      <nodes xmi:id="_4pRVhRV-EfCf5NuzPRiWMQ" name="Selected">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_4pRVhhV-EfCf5NuzPRiWMQ" name="Rhs">
+      <nodes xmi:id="_4pRVhxV-EfCf5NuzPRiWMQ" name="Selected">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+        <attributes xmi:id="_4pRViBV-EfCf5NuzPRiWMQ" value="Interface">
+          <type href="http://www.eclipse.org/emf/2002/Ecore#//EClass/interface"/>
+        </attributes>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_4pRViRV-EfCf5NuzPRiWMQ" origin="_4pRVhRV-EfCf5NuzPRiWMQ" image="_4pRVhxV-EfCf5NuzPRiWMQ"/>
+  </units>
+  <units xsi:type="henshin:PriorityUnit" xmi:id="_4pRVihV-EfCf5NuzPRiWMQ" name="mainUnit" subUnits="_4pRVgRV-EfCf5NuzPRiWMQ">
+    <parameters xmi:id="_4pRVixV-EfCf5NuzPRiWMQ" name="selectedEObject">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </parameters>
+    <parameters xmi:id="_4pRVjBV-EfCf5NuzPRiWMQ" name="Interface">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    </parameters>
+    <parameterMappings xmi:id="_4pRVjRV-EfCf5NuzPRiWMQ" source="_4pRVixV-EfCf5NuzPRiWMQ" target="_4pRVghV-EfCf5NuzPRiWMQ"/>
+    <parameterMappings xmi:id="_4pRVjhV-EfCf5NuzPRiWMQ" source="_4pRVjBV-EfCf5NuzPRiWMQ" target="_4pRVgxV-EfCf5NuzPRiWMQ"/>
+  </units>
+</henshin:Module>

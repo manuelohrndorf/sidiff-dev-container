@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_4fJJIBV-EfCf5NuzPRiWMQ" name="CREATE_EEnumLiteral_IN_EEnum_(eLiterals)" description="Creates one EEnumLiteral in EEnum">
+  <annotations xmi:id="_4fJJIRV-EfCf5NuzPRiWMQ" key="INVERSE" value="DELETE_EEnumLiteral_IN_EEnum_(eLiterals)"/>
+  <imports href="http://www.eclipse.org/emf/2002/Ecore#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_4fJJIhV-EfCf5NuzPRiWMQ" name="createEEnumLiteral_IN_EEnum" description="creates one EEnumLiteral in the context: EEnum">
+    <parameters xmi:id="_4fJJIxV-EfCf5NuzPRiWMQ" name="Selected" kind="IN">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EEnum"/>
+    </parameters>
+    <parameters xmi:id="_4fJJJBV-EfCf5NuzPRiWMQ" name="New" kind="OUT">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EEnumLiteral"/>
+    </parameters>
+    <parameters xmi:id="_4fJJJRV-EfCf5NuzPRiWMQ" name="Name" kind="OUT">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <parameters xmi:id="_4fJJJhV-EfCf5NuzPRiWMQ" name="Value" kind="OUT">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    </parameters>
+    <parameters xmi:id="_4fJJJxV-EfCf5NuzPRiWMQ" name="Literal" kind="OUT">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <lhs xmi:id="_4fJJKBV-EfCf5NuzPRiWMQ" name="Lhs">
+      <nodes xmi:id="_4fJJKRV-EfCf5NuzPRiWMQ" name="Selected">
+        <annotations xmi:id="_4fJJKhV-EfCf5NuzPRiWMQ" key="SERGE_" value="CONTEXT"/>
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EEnum"/>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_4fJJKxV-EfCf5NuzPRiWMQ" name="Rhs">
+      <nodes xmi:id="_4fJJLBV-EfCf5NuzPRiWMQ" name="Selected" incoming="_4fJJNBV-EfCf5NuzPRiWMQ" outgoing="_4fJJMxV-EfCf5NuzPRiWMQ">
+        <annotations xmi:id="_4fJJLRV-EfCf5NuzPRiWMQ" key="SERGE_" value="CONTEXT"/>
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EEnum"/>
+      </nodes>
+      <nodes xmi:id="_4fJJLhV-EfCf5NuzPRiWMQ" name="New" incoming="_4fJJMxV-EfCf5NuzPRiWMQ" outgoing="_4fJJNBV-EfCf5NuzPRiWMQ">
+        <annotations xmi:id="_4fJJLxV-EfCf5NuzPRiWMQ" key="SERGE_" value="FOCUS"/>
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EEnumLiteral"/>
+        <attributes xmi:id="_4fJJMBV-EfCf5NuzPRiWMQ" value="Name">
+          <type href="http://www.eclipse.org/emf/2002/Ecore#//ENamedElement/name"/>
+        </attributes>
+        <attributes xmi:id="_4fJJMRV-EfCf5NuzPRiWMQ" value="Value">
+          <type href="http://www.eclipse.org/emf/2002/Ecore#//EEnumLiteral/value"/>
+        </attributes>
+        <attributes xmi:id="_4fJJMhV-EfCf5NuzPRiWMQ" value="Literal">
+          <type href="http://www.eclipse.org/emf/2002/Ecore#//EEnumLiteral/literal"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_4fJJMxV-EfCf5NuzPRiWMQ" source="_4fJJLBV-EfCf5NuzPRiWMQ" target="_4fJJLhV-EfCf5NuzPRiWMQ">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EEnum/eLiterals"/>
+      </edges>
+      <edges xmi:id="_4fJJNBV-EfCf5NuzPRiWMQ" source="_4fJJLhV-EfCf5NuzPRiWMQ" target="_4fJJLBV-EfCf5NuzPRiWMQ">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EEnumLiteral/eEnum"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_4fJJNRV-EfCf5NuzPRiWMQ" origin="_4fJJKRV-EfCf5NuzPRiWMQ" image="_4fJJLBV-EfCf5NuzPRiWMQ"/>
+  </units>
+  <units xsi:type="henshin:PriorityUnit" xmi:id="_4fJJNhV-EfCf5NuzPRiWMQ" name="mainUnit" subUnits="_4fJJIhV-EfCf5NuzPRiWMQ">
+    <parameters xmi:id="_4fJJNxV-EfCf5NuzPRiWMQ" name="selectedEObject">
+      <annotations xmi:id="_4fJJOBV-EfCf5NuzPRiWMQ" key="INVERSE" value="selectedEObject"/>
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EEnum"/>
+    </parameters>
+    <parameters xmi:id="_4fJJORV-EfCf5NuzPRiWMQ" name="New">
+      <annotations xmi:id="_4fJJOhV-EfCf5NuzPRiWMQ" key="INVERSE" value="ToBeDeleted"/>
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EEnumLiteral"/>
+    </parameters>
+    <parameters xmi:id="_4fJJOxV-EfCf5NuzPRiWMQ" name="Name">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <parameters xmi:id="_4fJJPBV-EfCf5NuzPRiWMQ" name="Value">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    </parameters>
+    <parameters xmi:id="_4fJJPRV-EfCf5NuzPRiWMQ" name="Literal">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <parameterMappings xmi:id="_4fJJPhV-EfCf5NuzPRiWMQ" source="_4fJJNxV-EfCf5NuzPRiWMQ" target="_4fJJIxV-EfCf5NuzPRiWMQ"/>
+    <parameterMappings xmi:id="_4fJJPxV-EfCf5NuzPRiWMQ" source="_4fJJJBV-EfCf5NuzPRiWMQ" target="_4fJJORV-EfCf5NuzPRiWMQ"/>
+    <parameterMappings xmi:id="_4fJJQBV-EfCf5NuzPRiWMQ" source="_4fJJOxV-EfCf5NuzPRiWMQ" target="_4fJJJRV-EfCf5NuzPRiWMQ"/>
+    <parameterMappings xmi:id="_4fJJQRV-EfCf5NuzPRiWMQ" source="_4fJJPBV-EfCf5NuzPRiWMQ" target="_4fJJJhV-EfCf5NuzPRiWMQ"/>
+    <parameterMappings xmi:id="_4fJJQhV-EfCf5NuzPRiWMQ" source="_4fJJPRV-EfCf5NuzPRiWMQ" target="_4fJJJxV-EfCf5NuzPRiWMQ"/>
+  </units>
+</henshin:Module>

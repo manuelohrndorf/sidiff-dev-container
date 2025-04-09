@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_4orfoBV-EfCf5NuzPRiWMQ" name="SET_ATTRIBUTE_EPackage_NsPrefix" description="Sets EPackage NsPrefix">
+  <imports href="http://www.eclipse.org/emf/2002/Ecore#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_4orfoRV-EfCf5NuzPRiWMQ" name="setEPackageNsPrefix" description="Sets the EAttribute nsPrefix">
+    <parameters xmi:id="_4orfohV-EfCf5NuzPRiWMQ" name="Selected" kind="IN">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+    </parameters>
+    <parameters xmi:id="_4orfoxV-EfCf5NuzPRiWMQ" name="NsPrefix" kind="OUT">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <lhs xmi:id="_4orfpBV-EfCf5NuzPRiWMQ" name="Lhs">
+      <nodes xmi:id="_4orfpRV-EfCf5NuzPRiWMQ" name="Selected">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_4orfphV-EfCf5NuzPRiWMQ" name="Rhs">
+      <nodes xmi:id="_4orfpxV-EfCf5NuzPRiWMQ" name="Selected">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+        <attributes xmi:id="_4orfqBV-EfCf5NuzPRiWMQ" value="NsPrefix">
+          <type href="http://www.eclipse.org/emf/2002/Ecore#//EPackage/nsPrefix"/>
+        </attributes>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_4orfqRV-EfCf5NuzPRiWMQ" origin="_4orfpRV-EfCf5NuzPRiWMQ" image="_4orfpxV-EfCf5NuzPRiWMQ"/>
+  </units>
+  <units xsi:type="henshin:PriorityUnit" xmi:id="_4orfqhV-EfCf5NuzPRiWMQ" name="mainUnit" subUnits="_4orfoRV-EfCf5NuzPRiWMQ">
+    <parameters xmi:id="_4orfqxV-EfCf5NuzPRiWMQ" name="selectedEObject">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+    </parameters>
+    <parameters xmi:id="_4orfrBV-EfCf5NuzPRiWMQ" name="NsPrefix">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <parameterMappings xmi:id="_4orfrRV-EfCf5NuzPRiWMQ" source="_4orfqxV-EfCf5NuzPRiWMQ" target="_4orfohV-EfCf5NuzPRiWMQ"/>
+    <parameterMappings xmi:id="_4orfrhV-EfCf5NuzPRiWMQ" source="_4orfrBV-EfCf5NuzPRiWMQ" target="_4orfoxV-EfCf5NuzPRiWMQ"/>
+  </units>
+</henshin:Module>

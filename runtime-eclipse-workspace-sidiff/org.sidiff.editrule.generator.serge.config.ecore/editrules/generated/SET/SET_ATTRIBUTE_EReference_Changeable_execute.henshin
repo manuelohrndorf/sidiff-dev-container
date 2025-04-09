@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_4eS0kBV-EfCf5NuzPRiWMQ" name="SET_ATTRIBUTE_EReference_Changeable" description="Sets EReference Changeable">
+  <imports href="http://www.eclipse.org/emf/2002/Ecore#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_4eS0kRV-EfCf5NuzPRiWMQ" name="setEReferenceChangeable" description="Sets the EAttribute changeable">
+    <parameters xmi:id="_4eS0khV-EfCf5NuzPRiWMQ" name="Selected" kind="IN">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </parameters>
+    <parameters xmi:id="_4eS0kxV-EfCf5NuzPRiWMQ" name="Changeable" kind="OUT">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    </parameters>
+    <lhs xmi:id="_4eS0lBV-EfCf5NuzPRiWMQ" name="Lhs">
+      <nodes xmi:id="_4eS0lRV-EfCf5NuzPRiWMQ" name="Selected">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_4eS0lhV-EfCf5NuzPRiWMQ" name="Rhs">
+      <nodes xmi:id="_4eS0lxV-EfCf5NuzPRiWMQ" name="Selected">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+        <attributes xmi:id="_4eS0mBV-EfCf5NuzPRiWMQ" value="Changeable">
+          <type href="http://www.eclipse.org/emf/2002/Ecore#//EStructuralFeature/changeable"/>
+        </attributes>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_4eS0mRV-EfCf5NuzPRiWMQ" origin="_4eS0lRV-EfCf5NuzPRiWMQ" image="_4eS0lxV-EfCf5NuzPRiWMQ"/>
+  </units>
+  <units xsi:type="henshin:PriorityUnit" xmi:id="_4eS0mhV-EfCf5NuzPRiWMQ" name="mainUnit" subUnits="_4eS0kRV-EfCf5NuzPRiWMQ">
+    <parameters xmi:id="_4eS0mxV-EfCf5NuzPRiWMQ" name="selectedEObject">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </parameters>
+    <parameters xmi:id="_4eS0nBV-EfCf5NuzPRiWMQ" name="Changeable">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    </parameters>
+    <parameterMappings xmi:id="_4eS0nRV-EfCf5NuzPRiWMQ" source="_4eS0mxV-EfCf5NuzPRiWMQ" target="_4eS0khV-EfCf5NuzPRiWMQ"/>
+    <parameterMappings xmi:id="_4eS0nhV-EfCf5NuzPRiWMQ" source="_4eS0nBV-EfCf5NuzPRiWMQ" target="_4eS0kxV-EfCf5NuzPRiWMQ"/>
+  </units>
+</henshin:Module>

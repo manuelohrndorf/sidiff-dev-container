@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_4lQ_QBV-EfCf5NuzPRiWMQ" name="SET_ATTRIBUTE_EDataType_Serializable" description="Sets EDataType Serializable">
+  <imports href="http://www.eclipse.org/emf/2002/Ecore#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_4lQ_QRV-EfCf5NuzPRiWMQ" name="setEDataTypeSerializable" description="Sets the EAttribute serializable">
+    <parameters xmi:id="_4lQ_QhV-EfCf5NuzPRiWMQ" name="Selected" kind="IN">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </parameters>
+    <parameters xmi:id="_4lQ_QxV-EfCf5NuzPRiWMQ" name="Serializable" kind="OUT">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    </parameters>
+    <lhs xmi:id="_4lQ_RBV-EfCf5NuzPRiWMQ" name="Lhs">
+      <nodes xmi:id="_4lQ_RRV-EfCf5NuzPRiWMQ" name="Selected">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_4lQ_RhV-EfCf5NuzPRiWMQ" name="Rhs">
+      <nodes xmi:id="_4lQ_RxV-EfCf5NuzPRiWMQ" name="Selected">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+        <attributes xmi:id="_4lQ_SBV-EfCf5NuzPRiWMQ" value="Serializable">
+          <type href="http://www.eclipse.org/emf/2002/Ecore#//EDataType/serializable"/>
+        </attributes>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_4lQ_SRV-EfCf5NuzPRiWMQ" origin="_4lQ_RRV-EfCf5NuzPRiWMQ" image="_4lQ_RxV-EfCf5NuzPRiWMQ"/>
+  </units>
+  <units xsi:type="henshin:PriorityUnit" xmi:id="_4lQ_ShV-EfCf5NuzPRiWMQ" name="mainUnit" subUnits="_4lQ_QRV-EfCf5NuzPRiWMQ">
+    <parameters xmi:id="_4lQ_SxV-EfCf5NuzPRiWMQ" name="selectedEObject">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </parameters>
+    <parameters xmi:id="_4lQ_TBV-EfCf5NuzPRiWMQ" name="Serializable">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    </parameters>
+    <parameterMappings xmi:id="_4lQ_TRV-EfCf5NuzPRiWMQ" source="_4lQ_SxV-EfCf5NuzPRiWMQ" target="_4lQ_QhV-EfCf5NuzPRiWMQ"/>
+    <parameterMappings xmi:id="_4lQ_ThV-EfCf5NuzPRiWMQ" source="_4lQ_TBV-EfCf5NuzPRiWMQ" target="_4lQ_QxV-EfCf5NuzPRiWMQ"/>
+  </units>
+</henshin:Module>

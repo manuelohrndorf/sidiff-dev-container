@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_4jnZcBV-EfCf5NuzPRiWMQ" name="SET_ATTRIBUTE_EAttribute_Derived" description="Sets EAttribute Derived">
+  <imports href="http://www.eclipse.org/emf/2002/Ecore#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_4jnZcRV-EfCf5NuzPRiWMQ" name="setEAttributeDerived" description="Sets the EAttribute derived">
+    <parameters xmi:id="_4jnZchV-EfCf5NuzPRiWMQ" name="Selected" kind="IN">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </parameters>
+    <parameters xmi:id="_4jnZcxV-EfCf5NuzPRiWMQ" name="Derived" kind="OUT">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    </parameters>
+    <lhs xmi:id="_4jnZdBV-EfCf5NuzPRiWMQ" name="Lhs">
+      <nodes xmi:id="_4jnZdRV-EfCf5NuzPRiWMQ" name="Selected">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_4jnZdhV-EfCf5NuzPRiWMQ" name="Rhs">
+      <nodes xmi:id="_4jnZdxV-EfCf5NuzPRiWMQ" name="Selected">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+        <attributes xmi:id="_4jnZeBV-EfCf5NuzPRiWMQ" value="Derived">
+          <type href="http://www.eclipse.org/emf/2002/Ecore#//EStructuralFeature/derived"/>
+        </attributes>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_4jnZeRV-EfCf5NuzPRiWMQ" origin="_4jnZdRV-EfCf5NuzPRiWMQ" image="_4jnZdxV-EfCf5NuzPRiWMQ"/>
+  </units>
+  <units xsi:type="henshin:PriorityUnit" xmi:id="_4jnZehV-EfCf5NuzPRiWMQ" name="mainUnit" subUnits="_4jnZcRV-EfCf5NuzPRiWMQ">
+    <parameters xmi:id="_4jnZexV-EfCf5NuzPRiWMQ" name="selectedEObject">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </parameters>
+    <parameters xmi:id="_4jnZfBV-EfCf5NuzPRiWMQ" name="Derived">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    </parameters>
+    <parameterMappings xmi:id="_4jnZfRV-EfCf5NuzPRiWMQ" source="_4jnZexV-EfCf5NuzPRiWMQ" target="_4jnZchV-EfCf5NuzPRiWMQ"/>
+    <parameterMappings xmi:id="_4jnZfhV-EfCf5NuzPRiWMQ" source="_4jnZfBV-EfCf5NuzPRiWMQ" target="_4jnZcxV-EfCf5NuzPRiWMQ"/>
+  </units>
+</henshin:Module>

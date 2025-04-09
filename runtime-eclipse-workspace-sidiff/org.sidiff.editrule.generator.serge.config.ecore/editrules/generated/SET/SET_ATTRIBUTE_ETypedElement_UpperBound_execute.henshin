@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_4i7c8BV-EfCf5NuzPRiWMQ" name="SET_ATTRIBUTE_ETypedElement_UpperBound" description="Sets ETypedElement UpperBound">
+  <imports href="http://www.eclipse.org/emf/2002/Ecore#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_4i7c8RV-EfCf5NuzPRiWMQ" name="setETypedElementUpperBound" description="Sets the EAttribute upperBound">
+    <parameters xmi:id="_4i7c8hV-EfCf5NuzPRiWMQ" name="Selected" kind="IN">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//ETypedElement"/>
+    </parameters>
+    <parameters xmi:id="_4i7c8xV-EfCf5NuzPRiWMQ" name="UpperBound" kind="OUT">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    </parameters>
+    <lhs xmi:id="_4i7c9BV-EfCf5NuzPRiWMQ" name="Lhs">
+      <nodes xmi:id="_4i7c9RV-EfCf5NuzPRiWMQ" name="Selected">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//ETypedElement"/>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_4i7c9hV-EfCf5NuzPRiWMQ" name="Rhs">
+      <nodes xmi:id="_4i7c9xV-EfCf5NuzPRiWMQ" name="Selected">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//ETypedElement"/>
+        <attributes xmi:id="_4i7c-BV-EfCf5NuzPRiWMQ" value="UpperBound">
+          <type href="http://www.eclipse.org/emf/2002/Ecore#//ETypedElement/upperBound"/>
+        </attributes>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_4i7c-RV-EfCf5NuzPRiWMQ" origin="_4i7c9RV-EfCf5NuzPRiWMQ" image="_4i7c9xV-EfCf5NuzPRiWMQ"/>
+  </units>
+  <units xsi:type="henshin:PriorityUnit" xmi:id="_4i7c-hV-EfCf5NuzPRiWMQ" name="mainUnit" subUnits="_4i7c8RV-EfCf5NuzPRiWMQ">
+    <parameters xmi:id="_4i7c-xV-EfCf5NuzPRiWMQ" name="selectedEObject">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//ETypedElement"/>
+    </parameters>
+    <parameters xmi:id="_4i7c_BV-EfCf5NuzPRiWMQ" name="UpperBound">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    </parameters>
+    <parameterMappings xmi:id="_4i7c_RV-EfCf5NuzPRiWMQ" source="_4i7c-xV-EfCf5NuzPRiWMQ" target="_4i7c8hV-EfCf5NuzPRiWMQ"/>
+    <parameterMappings xmi:id="_4i7c_hV-EfCf5NuzPRiWMQ" source="_4i7c_BV-EfCf5NuzPRiWMQ" target="_4i7c8xV-EfCf5NuzPRiWMQ"/>
+  </units>
+</henshin:Module>

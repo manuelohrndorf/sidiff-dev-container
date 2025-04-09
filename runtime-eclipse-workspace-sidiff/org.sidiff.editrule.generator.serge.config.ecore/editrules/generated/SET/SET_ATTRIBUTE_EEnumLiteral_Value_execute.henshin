@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_4mUIIBV-EfCf5NuzPRiWMQ" name="SET_ATTRIBUTE_EEnumLiteral_Value" description="Sets EEnumLiteral Value">
+  <imports href="http://www.eclipse.org/emf/2002/Ecore#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_4mUIIRV-EfCf5NuzPRiWMQ" name="setEEnumLiteralValue" description="Sets the EAttribute value">
+    <parameters xmi:id="_4mUIIhV-EfCf5NuzPRiWMQ" name="Selected" kind="IN">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EEnumLiteral"/>
+    </parameters>
+    <parameters xmi:id="_4mUIIxV-EfCf5NuzPRiWMQ" name="Value" kind="OUT">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    </parameters>
+    <lhs xmi:id="_4mUIJBV-EfCf5NuzPRiWMQ" name="Lhs">
+      <nodes xmi:id="_4mUIJRV-EfCf5NuzPRiWMQ" name="Selected">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EEnumLiteral"/>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_4mUIJhV-EfCf5NuzPRiWMQ" name="Rhs">
+      <nodes xmi:id="_4mUIJxV-EfCf5NuzPRiWMQ" name="Selected">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EEnumLiteral"/>
+        <attributes xmi:id="_4mUIKBV-EfCf5NuzPRiWMQ" value="Value">
+          <type href="http://www.eclipse.org/emf/2002/Ecore#//EEnumLiteral/value"/>
+        </attributes>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_4mUIKRV-EfCf5NuzPRiWMQ" origin="_4mUIJRV-EfCf5NuzPRiWMQ" image="_4mUIJxV-EfCf5NuzPRiWMQ"/>
+  </units>
+  <units xsi:type="henshin:PriorityUnit" xmi:id="_4mUIKhV-EfCf5NuzPRiWMQ" name="mainUnit" subUnits="_4mUIIRV-EfCf5NuzPRiWMQ">
+    <parameters xmi:id="_4mUIKxV-EfCf5NuzPRiWMQ" name="selectedEObject">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EEnumLiteral"/>
+    </parameters>
+    <parameters xmi:id="_4mUILBV-EfCf5NuzPRiWMQ" name="Value">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    </parameters>
+    <parameterMappings xmi:id="_4mUILRV-EfCf5NuzPRiWMQ" source="_4mUIKxV-EfCf5NuzPRiWMQ" target="_4mUIIhV-EfCf5NuzPRiWMQ"/>
+    <parameterMappings xmi:id="_4mUILhV-EfCf5NuzPRiWMQ" source="_4mUILBV-EfCf5NuzPRiWMQ" target="_4mUIIxV-EfCf5NuzPRiWMQ"/>
+  </units>
+</henshin:Module>

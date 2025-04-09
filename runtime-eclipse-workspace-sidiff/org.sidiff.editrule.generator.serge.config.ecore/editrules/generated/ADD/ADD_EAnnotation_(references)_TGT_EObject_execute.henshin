@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_4ibtsBV-EfCf5NuzPRiWMQ" name="ADD_EAnnotation_(references)_TGT_EObject" description="Adds to EAnnotation's reference references the target EObject">
+  <annotations xmi:id="_4ibtsRV-EfCf5NuzPRiWMQ" key="INVERSE" value="REMOVE_EAnnotation_(references)_TGT_EObject"/>
+  <imports href="http://www.eclipse.org/emf/2002/Ecore#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_4ibtshV-EfCf5NuzPRiWMQ" name="addToEAnnotation_references_EObject" description="Adds to EAnnotation's reference references the target EObject">
+    <parameters xmi:id="_4ibtsxV-EfCf5NuzPRiWMQ" name="Selected" kind="IN">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EAnnotation"/>
+    </parameters>
+    <parameters xmi:id="_4ibttBV-EfCf5NuzPRiWMQ" name="NewTarget" kind="IN">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+    </parameters>
+    <lhs xmi:id="_4ibttRV-EfCf5NuzPRiWMQ" name="Lhs">
+      <nodes xmi:id="_4ibtthV-EfCf5NuzPRiWMQ" name="Selected">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EAnnotation"/>
+      </nodes>
+      <nodes xmi:id="_4ibttxV-EfCf5NuzPRiWMQ" name="NewTarget">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_4ibtuBV-EfCf5NuzPRiWMQ" name="Rhs">
+      <nodes xmi:id="_4ibtuRV-EfCf5NuzPRiWMQ" name="Selected" outgoing="_4ibtuxV-EfCf5NuzPRiWMQ">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EAnnotation"/>
+      </nodes>
+      <nodes xmi:id="_4ibtuhV-EfCf5NuzPRiWMQ" name="NewTarget" incoming="_4ibtuxV-EfCf5NuzPRiWMQ">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+      </nodes>
+      <edges xmi:id="_4ibtuxV-EfCf5NuzPRiWMQ" source="_4ibtuRV-EfCf5NuzPRiWMQ" target="_4ibtuhV-EfCf5NuzPRiWMQ">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EAnnotation/references"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_4ibtvBV-EfCf5NuzPRiWMQ" origin="_4ibtthV-EfCf5NuzPRiWMQ" image="_4ibtuRV-EfCf5NuzPRiWMQ"/>
+    <mappings xmi:id="_4ibtvRV-EfCf5NuzPRiWMQ" origin="_4ibttxV-EfCf5NuzPRiWMQ" image="_4ibtuhV-EfCf5NuzPRiWMQ"/>
+  </units>
+  <units xsi:type="henshin:PriorityUnit" xmi:id="_4ibtvhV-EfCf5NuzPRiWMQ" name="mainUnit" subUnits="_4ibtshV-EfCf5NuzPRiWMQ">
+    <parameters xmi:id="_4ibtvxV-EfCf5NuzPRiWMQ" name="selectedEObject">
+      <annotations xmi:id="_4ibtwBV-EfCf5NuzPRiWMQ" key="INVERSE" value="selectedEObject"/>
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EAnnotation"/>
+    </parameters>
+    <parameters xmi:id="_4ibtwRV-EfCf5NuzPRiWMQ" name="NewTarget">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+    </parameters>
+    <parameterMappings xmi:id="_4ibtwhV-EfCf5NuzPRiWMQ" source="_4ibtvxV-EfCf5NuzPRiWMQ" target="_4ibtsxV-EfCf5NuzPRiWMQ"/>
+    <parameterMappings xmi:id="_4ibtwxV-EfCf5NuzPRiWMQ" source="_4ibtwRV-EfCf5NuzPRiWMQ" target="_4ibttBV-EfCf5NuzPRiWMQ"/>
+  </units>
+</henshin:Module>

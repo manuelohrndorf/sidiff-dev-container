@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_4niQIBV-EfCf5NuzPRiWMQ" name="DELETE_EEnum_IN_EPackage_(eClassifiers)" description="Deletes one EEnum in EPackage">
+  <annotations xmi:id="_4niQIRV-EfCf5NuzPRiWMQ" key="INVERSE" value="CREATE_EEnum_IN_EPackage_(eClassifiers)"/>
+  <imports href="http://www.eclipse.org/emf/2002/Ecore#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_4niQIhV-EfCf5NuzPRiWMQ" name="deleteEEnum_IN_EPackage" description="deletes one EEnum in the context: EPackage">
+    <parameters xmi:id="_4niQIxV-EfCf5NuzPRiWMQ" name="Selected" kind="IN">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+    </parameters>
+    <parameters xmi:id="_4niQJBV-EfCf5NuzPRiWMQ" name="ToBeDeleted" kind="IN">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EEnum"/>
+    </parameters>
+    <lhs xmi:id="_4niQJRV-EfCf5NuzPRiWMQ" name="LHS">
+      <nodes xmi:id="_4niQJhV-EfCf5NuzPRiWMQ" name="Selected" incoming="_4niQKxV-EfCf5NuzPRiWMQ" outgoing="_4niQKhV-EfCf5NuzPRiWMQ">
+        <annotations xmi:id="_4niQJxV-EfCf5NuzPRiWMQ" key="SERGE_" value="CONTEXT"/>
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+      </nodes>
+      <nodes xmi:id="_4niQKBV-EfCf5NuzPRiWMQ" name="ToBeDeleted" incoming="_4niQKhV-EfCf5NuzPRiWMQ" outgoing="_4niQKxV-EfCf5NuzPRiWMQ">
+        <annotations xmi:id="_4niQKRV-EfCf5NuzPRiWMQ" key="SERGE_" value="FOCUS"/>
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EEnum"/>
+      </nodes>
+      <edges xmi:id="_4niQKhV-EfCf5NuzPRiWMQ" source="_4niQJhV-EfCf5NuzPRiWMQ" target="_4niQKBV-EfCf5NuzPRiWMQ">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EPackage/eClassifiers"/>
+      </edges>
+      <edges xmi:id="_4niQKxV-EfCf5NuzPRiWMQ" source="_4niQKBV-EfCf5NuzPRiWMQ" target="_4niQJhV-EfCf5NuzPRiWMQ">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EClassifier/ePackage"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_4niQLBV-EfCf5NuzPRiWMQ" name="RHS">
+      <nodes xmi:id="_4niQLRV-EfCf5NuzPRiWMQ" name="Selected">
+        <annotations xmi:id="_4niQLhV-EfCf5NuzPRiWMQ" key="SERGE_" value="CONTEXT"/>
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_4niQLxV-EfCf5NuzPRiWMQ" origin="_4niQJhV-EfCf5NuzPRiWMQ" image="_4niQLRV-EfCf5NuzPRiWMQ"/>
+  </units>
+  <units xsi:type="henshin:PriorityUnit" xmi:id="_4niQMBV-EfCf5NuzPRiWMQ" name="mainUnit" subUnits="_4niQIhV-EfCf5NuzPRiWMQ">
+    <parameters xmi:id="_4niQMRV-EfCf5NuzPRiWMQ" name="selectedEObject">
+      <annotations xmi:id="_4niQMhV-EfCf5NuzPRiWMQ" key="INVERSE" value="selectedEObject"/>
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+    </parameters>
+    <parameters xmi:id="_4niQMxV-EfCf5NuzPRiWMQ" name="ToBeDeleted">
+      <annotations xmi:id="_4niQNBV-EfCf5NuzPRiWMQ" key="INVERSE" value="New"/>
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EEnum"/>
+    </parameters>
+    <parameterMappings xmi:id="_4niQNRV-EfCf5NuzPRiWMQ" source="_4niQMRV-EfCf5NuzPRiWMQ" target="_4niQIxV-EfCf5NuzPRiWMQ"/>
+    <parameterMappings xmi:id="_4niQNhV-EfCf5NuzPRiWMQ" source="_4niQMxV-EfCf5NuzPRiWMQ" target="_4niQJBV-EfCf5NuzPRiWMQ"/>
+  </units>
+</henshin:Module>

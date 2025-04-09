@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_4kotIBV-EfCf5NuzPRiWMQ" name="SET_ATTRIBUTE_EClass_Abstract" description="Sets EClass Abstract">
+  <imports href="http://www.eclipse.org/emf/2002/Ecore#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_4kotIRV-EfCf5NuzPRiWMQ" name="setEClassAbstract" description="Sets the EAttribute abstract">
+    <parameters xmi:id="_4kotIhV-EfCf5NuzPRiWMQ" name="Selected" kind="IN">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </parameters>
+    <parameters xmi:id="_4kotIxV-EfCf5NuzPRiWMQ" name="Abstract" kind="OUT">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    </parameters>
+    <lhs xmi:id="_4kotJBV-EfCf5NuzPRiWMQ" name="Lhs">
+      <nodes xmi:id="_4kotJRV-EfCf5NuzPRiWMQ" name="Selected">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_4kotJhV-EfCf5NuzPRiWMQ" name="Rhs">
+      <nodes xmi:id="_4kotJxV-EfCf5NuzPRiWMQ" name="Selected">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+        <attributes xmi:id="_4kotKBV-EfCf5NuzPRiWMQ" value="Abstract">
+          <type href="http://www.eclipse.org/emf/2002/Ecore#//EClass/abstract"/>
+        </attributes>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_4kotKRV-EfCf5NuzPRiWMQ" origin="_4kotJRV-EfCf5NuzPRiWMQ" image="_4kotJxV-EfCf5NuzPRiWMQ"/>
+  </units>
+  <units xsi:type="henshin:PriorityUnit" xmi:id="_4kotKhV-EfCf5NuzPRiWMQ" name="mainUnit" subUnits="_4kotIRV-EfCf5NuzPRiWMQ">
+    <parameters xmi:id="_4kotKxV-EfCf5NuzPRiWMQ" name="selectedEObject">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </parameters>
+    <parameters xmi:id="_4kotLBV-EfCf5NuzPRiWMQ" name="Abstract">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    </parameters>
+    <parameterMappings xmi:id="_4kotLRV-EfCf5NuzPRiWMQ" source="_4kotKxV-EfCf5NuzPRiWMQ" target="_4kotIhV-EfCf5NuzPRiWMQ"/>
+    <parameterMappings xmi:id="_4kotLhV-EfCf5NuzPRiWMQ" source="_4kotLBV-EfCf5NuzPRiWMQ" target="_4kotIxV-EfCf5NuzPRiWMQ"/>
+  </units>
+</henshin:Module>

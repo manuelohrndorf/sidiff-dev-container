@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_4py58BV-EfCf5NuzPRiWMQ" name="CREATE_EStringToStringMapEntry_IN_EAnnotation_(details)" description="Creates one EStringToStringMapEntry in EAnnotation">
+  <annotations xmi:id="_4py58RV-EfCf5NuzPRiWMQ" key="INVERSE" value="DELETE_EStringToStringMapEntry_IN_EAnnotation_(details)"/>
+  <imports href="http://www.eclipse.org/emf/2002/Ecore#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_4py58hV-EfCf5NuzPRiWMQ" name="createEStringToStringMapEntry_IN_EAnnotation" description="creates one EStringToStringMapEntry in the context: EAnnotation">
+    <parameters xmi:id="_4py58xV-EfCf5NuzPRiWMQ" name="Selected" kind="IN">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EAnnotation"/>
+    </parameters>
+    <parameters xmi:id="_4py59BV-EfCf5NuzPRiWMQ" name="New" kind="OUT">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EStringToStringMapEntry"/>
+    </parameters>
+    <parameters xmi:id="_4py59RV-EfCf5NuzPRiWMQ" name="Key" kind="OUT">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <parameters xmi:id="_4py59hV-EfCf5NuzPRiWMQ" name="Value" kind="OUT">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <lhs xmi:id="_4py59xV-EfCf5NuzPRiWMQ" name="Lhs">
+      <nodes xmi:id="_4py5-BV-EfCf5NuzPRiWMQ" name="Selected">
+        <annotations xmi:id="_4py5-RV-EfCf5NuzPRiWMQ" key="SERGE_" value="CONTEXT"/>
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EAnnotation"/>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_4py5-hV-EfCf5NuzPRiWMQ" name="Rhs">
+      <nodes xmi:id="_4py5-xV-EfCf5NuzPRiWMQ" name="Selected" outgoing="_4py6ARV-EfCf5NuzPRiWMQ">
+        <annotations xmi:id="_4py5_BV-EfCf5NuzPRiWMQ" key="SERGE_" value="CONTEXT"/>
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EAnnotation"/>
+      </nodes>
+      <nodes xmi:id="_4py5_RV-EfCf5NuzPRiWMQ" name="New" incoming="_4py6ARV-EfCf5NuzPRiWMQ">
+        <annotations xmi:id="_4py5_hV-EfCf5NuzPRiWMQ" key="SERGE_" value="FOCUS"/>
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EStringToStringMapEntry"/>
+        <attributes xmi:id="_4py5_xV-EfCf5NuzPRiWMQ" value="Key">
+          <type href="http://www.eclipse.org/emf/2002/Ecore#//EStringToStringMapEntry/key"/>
+        </attributes>
+        <attributes xmi:id="_4py6ABV-EfCf5NuzPRiWMQ" value="Value">
+          <type href="http://www.eclipse.org/emf/2002/Ecore#//EStringToStringMapEntry/value"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_4py6ARV-EfCf5NuzPRiWMQ" source="_4py5-xV-EfCf5NuzPRiWMQ" target="_4py5_RV-EfCf5NuzPRiWMQ">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EAnnotation/details"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_4py6AhV-EfCf5NuzPRiWMQ" origin="_4py5-BV-EfCf5NuzPRiWMQ" image="_4py5-xV-EfCf5NuzPRiWMQ"/>
+  </units>
+  <units xsi:type="henshin:PriorityUnit" xmi:id="_4py6AxV-EfCf5NuzPRiWMQ" name="mainUnit" subUnits="_4py58hV-EfCf5NuzPRiWMQ">
+    <parameters xmi:id="_4py6BBV-EfCf5NuzPRiWMQ" name="selectedEObject">
+      <annotations xmi:id="_4py6BRV-EfCf5NuzPRiWMQ" key="INVERSE" value="selectedEObject"/>
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EAnnotation"/>
+    </parameters>
+    <parameters xmi:id="_4py6BhV-EfCf5NuzPRiWMQ" name="New">
+      <annotations xmi:id="_4py6BxV-EfCf5NuzPRiWMQ" key="INVERSE" value="ToBeDeleted"/>
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EStringToStringMapEntry"/>
+    </parameters>
+    <parameters xmi:id="_4py6CBV-EfCf5NuzPRiWMQ" name="Key">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <parameters xmi:id="_4py6CRV-EfCf5NuzPRiWMQ" name="Value">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <parameterMappings xmi:id="_4py6ChV-EfCf5NuzPRiWMQ" source="_4py6BBV-EfCf5NuzPRiWMQ" target="_4py58xV-EfCf5NuzPRiWMQ"/>
+    <parameterMappings xmi:id="_4py6CxV-EfCf5NuzPRiWMQ" source="_4py59BV-EfCf5NuzPRiWMQ" target="_4py6BhV-EfCf5NuzPRiWMQ"/>
+    <parameterMappings xmi:id="_4py6DBV-EfCf5NuzPRiWMQ" source="_4py6CBV-EfCf5NuzPRiWMQ" target="_4py59RV-EfCf5NuzPRiWMQ"/>
+    <parameterMappings xmi:id="_4py6DRV-EfCf5NuzPRiWMQ" source="_4py6CRV-EfCf5NuzPRiWMQ" target="_4py59hV-EfCf5NuzPRiWMQ"/>
+  </units>
+</henshin:Module>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_4gM5EBV-EfCf5NuzPRiWMQ" name="MOVE_UP_EPackage_FROM_EPackage_(eSubpackages)_TO_EPackage_(eSubpackages)" description="MOVE UPWARDs EPackage from EPackage(Reference:eSubpackages) to EPackage(Reference:eSubpackages">
+  <imports href="http://www.eclipse.org/emf/2002/Ecore#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_4gM5ERV-EfCf5NuzPRiWMQ" name="moveUpEPackage_FROM_EPackage_eSubpackages_TO_EPackage_EPackage" description="Moves up EPackage from EPackage(Reference:eSubpackages) toEPackage(Reference:EPackage)">
+    <parameters xmi:id="_4gM5EhV-EfCf5NuzPRiWMQ" name="Selected" kind="IN">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+    </parameters>
+    <parameters xmi:id="_4gM5ExV-EfCf5NuzPRiWMQ" name="OldSource" kind="IN">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+    </parameters>
+    <parameters xmi:id="_4gM5FBV-EfCf5NuzPRiWMQ" name="NewSource" kind="IN">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+    </parameters>
+    <lhs xmi:id="_4gM5FRV-EfCf5NuzPRiWMQ" name="Lhs">
+      <nodes xmi:id="_4gM5FhV-EfCf5NuzPRiWMQ" name="Selected" incoming="_4gM5GRV-EfCf5NuzPRiWMQ" outgoing="_4gM5GhV-EfCf5NuzPRiWMQ">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+      </nodes>
+      <nodes xmi:id="_4gM5FxV-EfCf5NuzPRiWMQ" name="OldSource" incoming="_4gM5GhV-EfCf5NuzPRiWMQ" outgoing="_4gM5GRV-EfCf5NuzPRiWMQ">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+      </nodes>
+      <nodes xmi:id="_4gM5GBV-EfCf5NuzPRiWMQ" name="NewSource">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+      </nodes>
+      <edges xmi:id="_4gM5GRV-EfCf5NuzPRiWMQ" source="_4gM5FxV-EfCf5NuzPRiWMQ" target="_4gM5FhV-EfCf5NuzPRiWMQ">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EPackage/eSubpackages"/>
+      </edges>
+      <edges xmi:id="_4gM5GhV-EfCf5NuzPRiWMQ" source="_4gM5FhV-EfCf5NuzPRiWMQ" target="_4gM5FxV-EfCf5NuzPRiWMQ">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EPackage/eSuperPackage"/>
+      </edges>
+      <formula xsi:type="henshin:NestedCondition" xmi:id="_4gM5GxV-EfCf5NuzPRiWMQ">
+        <conclusion xmi:id="_4gM5HBV-EfCf5NuzPRiWMQ" name="cyclePath">
+          <nodes xmi:id="_4gM5HRV-EfCf5NuzPRiWMQ" name="OldSource" incoming="_4gM5HxV-EfCf5NuzPRiWMQ">
+            <type href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+          </nodes>
+          <nodes xmi:id="_4gM5HhV-EfCf5NuzPRiWMQ" name="NewSource" outgoing="_4gM5HxV-EfCf5NuzPRiWMQ">
+            <type href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+          </nodes>
+          <edges xmi:id="_4gM5HxV-EfCf5NuzPRiWMQ" source="_4gM5HhV-EfCf5NuzPRiWMQ" target="_4gM5HRV-EfCf5NuzPRiWMQ">
+            <type href="http://www.eclipse.org/emf/2002/Ecore#//EPackage/eSubpackages"/>
+          </edges>
+        </conclusion>
+        <mappings xmi:id="_4gM5IBV-EfCf5NuzPRiWMQ" origin="_4gM5GBV-EfCf5NuzPRiWMQ" image="_4gM5HhV-EfCf5NuzPRiWMQ"/>
+        <mappings xmi:id="_4gM5IRV-EfCf5NuzPRiWMQ" origin="_4gM5FxV-EfCf5NuzPRiWMQ" image="_4gM5HRV-EfCf5NuzPRiWMQ"/>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_4gM5IhV-EfCf5NuzPRiWMQ" name="Rhs">
+      <nodes xmi:id="_4gM5IxV-EfCf5NuzPRiWMQ" name="Selected" incoming="_4gM5JhV-EfCf5NuzPRiWMQ" outgoing="_4gM5JxV-EfCf5NuzPRiWMQ">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+      </nodes>
+      <nodes xmi:id="_4gM5JBV-EfCf5NuzPRiWMQ" name="OldSource">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+      </nodes>
+      <nodes xmi:id="_4gM5JRV-EfCf5NuzPRiWMQ" name="NewSource" incoming="_4gM5JxV-EfCf5NuzPRiWMQ" outgoing="_4gM5JhV-EfCf5NuzPRiWMQ">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+      </nodes>
+      <edges xmi:id="_4gM5JhV-EfCf5NuzPRiWMQ" source="_4gM5JRV-EfCf5NuzPRiWMQ" target="_4gM5IxV-EfCf5NuzPRiWMQ">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EPackage/eSubpackages"/>
+      </edges>
+      <edges xmi:id="_4gM5JxV-EfCf5NuzPRiWMQ" source="_4gM5IxV-EfCf5NuzPRiWMQ" target="_4gM5JRV-EfCf5NuzPRiWMQ">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EPackage/eSuperPackage"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_4gM5KBV-EfCf5NuzPRiWMQ" origin="_4gM5FhV-EfCf5NuzPRiWMQ" image="_4gM5IxV-EfCf5NuzPRiWMQ"/>
+    <mappings xmi:id="_4gM5KRV-EfCf5NuzPRiWMQ" origin="_4gM5FxV-EfCf5NuzPRiWMQ" image="_4gM5JBV-EfCf5NuzPRiWMQ"/>
+    <mappings xmi:id="_4gM5KhV-EfCf5NuzPRiWMQ" origin="_4gM5GBV-EfCf5NuzPRiWMQ" image="_4gM5JRV-EfCf5NuzPRiWMQ"/>
+  </units>
+  <units xsi:type="henshin:PriorityUnit" xmi:id="_4gM5KxV-EfCf5NuzPRiWMQ" name="mainUnit" subUnits="_4gM5ERV-EfCf5NuzPRiWMQ">
+    <parameters xmi:id="_4gM5LBV-EfCf5NuzPRiWMQ" name="selectedEObject">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+    </parameters>
+    <parameters xmi:id="_4gM5LRV-EfCf5NuzPRiWMQ" name="OldSource">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+    </parameters>
+    <parameters xmi:id="_4gM5LhV-EfCf5NuzPRiWMQ" name="NewSource">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+    </parameters>
+    <parameterMappings xmi:id="_4gM5LxV-EfCf5NuzPRiWMQ" source="_4gM5LBV-EfCf5NuzPRiWMQ" target="_4gM5EhV-EfCf5NuzPRiWMQ"/>
+    <parameterMappings xmi:id="_4gM5MBV-EfCf5NuzPRiWMQ" source="_4gM5LRV-EfCf5NuzPRiWMQ" target="_4gM5ExV-EfCf5NuzPRiWMQ"/>
+    <parameterMappings xmi:id="_4gM5MRV-EfCf5NuzPRiWMQ" source="_4gM5LhV-EfCf5NuzPRiWMQ" target="_4gM5FBV-EfCf5NuzPRiWMQ"/>
+  </units>
+</henshin:Module>

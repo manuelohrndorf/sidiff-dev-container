@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_4h7-cBV-EfCf5NuzPRiWMQ" name="SET_ATTRIBUTE_EParameter_LowerBound" description="Sets EParameter LowerBound">
+  <imports href="http://www.eclipse.org/emf/2002/Ecore#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_4h7-cRV-EfCf5NuzPRiWMQ" name="setEParameterLowerBound" description="Sets the EAttribute lowerBound">
+    <parameters xmi:id="_4h7-chV-EfCf5NuzPRiWMQ" name="Selected" kind="IN">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+    </parameters>
+    <parameters xmi:id="_4h7-cxV-EfCf5NuzPRiWMQ" name="LowerBound" kind="OUT">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    </parameters>
+    <lhs xmi:id="_4h7-dBV-EfCf5NuzPRiWMQ" name="Lhs">
+      <nodes xmi:id="_4h7-dRV-EfCf5NuzPRiWMQ" name="Selected">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_4h7-dhV-EfCf5NuzPRiWMQ" name="Rhs">
+      <nodes xmi:id="_4h7-dxV-EfCf5NuzPRiWMQ" name="Selected">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+        <attributes xmi:id="_4h7-eBV-EfCf5NuzPRiWMQ" value="LowerBound">
+          <type href="http://www.eclipse.org/emf/2002/Ecore#//ETypedElement/lowerBound"/>
+        </attributes>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_4h7-eRV-EfCf5NuzPRiWMQ" origin="_4h7-dRV-EfCf5NuzPRiWMQ" image="_4h7-dxV-EfCf5NuzPRiWMQ"/>
+  </units>
+  <units xsi:type="henshin:PriorityUnit" xmi:id="_4h7-ehV-EfCf5NuzPRiWMQ" name="mainUnit" subUnits="_4h7-cRV-EfCf5NuzPRiWMQ">
+    <parameters xmi:id="_4h7-exV-EfCf5NuzPRiWMQ" name="selectedEObject">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+    </parameters>
+    <parameters xmi:id="_4h7-fBV-EfCf5NuzPRiWMQ" name="LowerBound">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    </parameters>
+    <parameterMappings xmi:id="_4h7-fRV-EfCf5NuzPRiWMQ" source="_4h7-exV-EfCf5NuzPRiWMQ" target="_4h7-chV-EfCf5NuzPRiWMQ"/>
+    <parameterMappings xmi:id="_4h7-fhV-EfCf5NuzPRiWMQ" source="_4h7-fBV-EfCf5NuzPRiWMQ" target="_4h7-cxV-EfCf5NuzPRiWMQ"/>
+  </units>
+</henshin:Module>

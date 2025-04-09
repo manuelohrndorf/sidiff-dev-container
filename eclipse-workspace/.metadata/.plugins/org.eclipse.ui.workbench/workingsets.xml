@@ -5,17 +5,17 @@
 <workingSet editPageId="org.eclipse.emf.cdo.explorer.ui.OthersWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1744065794061_2" label="Other CDO Checkouts" name="Other CDO Checkouts"/>
 <workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1744066474888_6" label="Common" name="Common">
 <item elementID="=org.sidiff.common.ui" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=org.sidiff.common.henshin" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=org.sidiff.common.extension" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/org.sidiff.common.xml" type="4"/>
 <item elementID="=org.sidiff.common" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=org.sidiff.common.emf" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=org.sidiff.common.emf.ui" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=org.sidiff.common.henshin" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=org.sidiff.common.xml" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSet>
-<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1744067721542_8" label="Lifting" name="Lifting">
-<item elementID="=org.sidiff.editrule.generator.serge.batch" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1744067721542_8" label="SERGe" name="SERGe">
 <item elementID="=org.sidiff.editrule.generator.serge.ui" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=org.sidiff.editrule.generator.serge" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=org.sidiff.editrule.generator.serge.batch" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=org.sidiff.editrule.generator.ui" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=org.sidiff.editrule.generator" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSet>
@@ -36,7 +36,6 @@
 </workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1744067751572_9" label="Multiple Working Sets" name="Aggregate:Common:Lifting:Matching:">
 <workingSet IMemento.internal.id="Common"/>
-<workingSet IMemento.internal.id="Lifting"/>
 </workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1744069445211_12" label="Window Working Set" name="Aggregate for window 1744069445210"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1744076372960_14" label="Window Working Set" name="Aggregate for window 1744076372960"/>
@@ -48,18 +47,16 @@
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1744207468095_20" label="Multiple Working Sets" name="Aggregate:Common:Henshin:Lifting:Matching:Papyrus:">
 <workingSet IMemento.internal.id="Common"/>
 <workingSet IMemento.internal.id="Henshin"/>
-<workingSet IMemento.internal.id="Lifting"/>
 </workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1744223944982_20" label="Multiple Working Sets" name="Aggregate:Common:Henshin:Lifting:Matching:">
 <workingSet IMemento.internal.id="Common"/>
 <workingSet IMemento.internal.id="Henshin"/>
-<workingSet IMemento.internal.id="Lifting"/>
 </workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1744226138257_21" label="Multiple Working Sets" name="Aggregate:Common:Henshin:Lifting:">
 <workingSet IMemento.internal.id="Common"/>
 <workingSet IMemento.internal.id="Henshin"/>
-<workingSet IMemento.internal.id="Lifting"/>
+<workingSet IMemento.internal.id="SERGe"/>
 </workingSet>
 <mruList name="Henshin"/>
-<mruList name="Lifting"/>
+<mruList name="SERGe"/>
 </workingSetManager>

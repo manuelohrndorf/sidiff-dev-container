@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_4nYfIBV-EfCf5NuzPRiWMQ" name="DELETE_EStringToStringMapEntry_IN_EAnnotation_(details)" description="Deletes one EStringToStringMapEntry in EAnnotation">
+  <annotations xmi:id="_4nYfIRV-EfCf5NuzPRiWMQ" key="INVERSE" value="CREATE_EStringToStringMapEntry_IN_EAnnotation_(details)"/>
+  <imports href="http://www.eclipse.org/emf/2002/Ecore#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_4nYfIhV-EfCf5NuzPRiWMQ" name="deleteEStringToStringMapEntry_IN_EAnnotation" description="deletes one EStringToStringMapEntry in the context: EAnnotation">
+    <parameters xmi:id="_4nYfIxV-EfCf5NuzPRiWMQ" name="Selected" kind="IN">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EAnnotation"/>
+    </parameters>
+    <parameters xmi:id="_4nYfJBV-EfCf5NuzPRiWMQ" name="ToBeDeleted" kind="IN">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EStringToStringMapEntry"/>
+    </parameters>
+    <lhs xmi:id="_4nYfJRV-EfCf5NuzPRiWMQ" name="LHS">
+      <nodes xmi:id="_4nYfJhV-EfCf5NuzPRiWMQ" name="Selected" outgoing="_4nYfKhV-EfCf5NuzPRiWMQ">
+        <annotations xmi:id="_4nYfJxV-EfCf5NuzPRiWMQ" key="SERGE_" value="CONTEXT"/>
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EAnnotation"/>
+      </nodes>
+      <nodes xmi:id="_4nYfKBV-EfCf5NuzPRiWMQ" name="ToBeDeleted" incoming="_4nYfKhV-EfCf5NuzPRiWMQ">
+        <annotations xmi:id="_4nYfKRV-EfCf5NuzPRiWMQ" key="SERGE_" value="FOCUS"/>
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EStringToStringMapEntry"/>
+      </nodes>
+      <edges xmi:id="_4nYfKhV-EfCf5NuzPRiWMQ" source="_4nYfJhV-EfCf5NuzPRiWMQ" target="_4nYfKBV-EfCf5NuzPRiWMQ">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EAnnotation/details"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_4nYfKxV-EfCf5NuzPRiWMQ" name="RHS">
+      <nodes xmi:id="_4nYfLBV-EfCf5NuzPRiWMQ" name="Selected">
+        <annotations xmi:id="_4nYfLRV-EfCf5NuzPRiWMQ" key="SERGE_" value="CONTEXT"/>
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EAnnotation"/>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_4nYfLhV-EfCf5NuzPRiWMQ" origin="_4nYfJhV-EfCf5NuzPRiWMQ" image="_4nYfLBV-EfCf5NuzPRiWMQ"/>
+  </units>
+  <units xsi:type="henshin:PriorityUnit" xmi:id="_4nYfLxV-EfCf5NuzPRiWMQ" name="mainUnit" subUnits="_4nYfIhV-EfCf5NuzPRiWMQ">
+    <parameters xmi:id="_4nYfMBV-EfCf5NuzPRiWMQ" name="selectedEObject">
+      <annotations xmi:id="_4nYfMRV-EfCf5NuzPRiWMQ" key="INVERSE" value="selectedEObject"/>
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EAnnotation"/>
+    </parameters>
+    <parameters xmi:id="_4nYfMhV-EfCf5NuzPRiWMQ" name="ToBeDeleted">
+      <annotations xmi:id="_4nYfMxV-EfCf5NuzPRiWMQ" key="INVERSE" value="New"/>
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EStringToStringMapEntry"/>
+    </parameters>
+    <parameterMappings xmi:id="_4nYfNBV-EfCf5NuzPRiWMQ" source="_4nYfMBV-EfCf5NuzPRiWMQ" target="_4nYfIxV-EfCf5NuzPRiWMQ"/>
+    <parameterMappings xmi:id="_4nYfNRV-EfCf5NuzPRiWMQ" source="_4nYfMhV-EfCf5NuzPRiWMQ" target="_4nYfJBV-EfCf5NuzPRiWMQ"/>
+  </units>
+</henshin:Module>

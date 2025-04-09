@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_4fypYBV-EfCf5NuzPRiWMQ" name="SET_ATTRIBUTE_EReference_Unsettable" description="Sets EReference Unsettable">
+  <imports href="http://www.eclipse.org/emf/2002/Ecore#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_4fypYRV-EfCf5NuzPRiWMQ" name="setEReferenceUnsettable" description="Sets the EAttribute unsettable">
+    <parameters xmi:id="_4fypYhV-EfCf5NuzPRiWMQ" name="Selected" kind="IN">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </parameters>
+    <parameters xmi:id="_4fypYxV-EfCf5NuzPRiWMQ" name="Unsettable" kind="OUT">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    </parameters>
+    <lhs xmi:id="_4fypZBV-EfCf5NuzPRiWMQ" name="Lhs">
+      <nodes xmi:id="_4fypZRV-EfCf5NuzPRiWMQ" name="Selected">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_4fypZhV-EfCf5NuzPRiWMQ" name="Rhs">
+      <nodes xmi:id="_4fypZxV-EfCf5NuzPRiWMQ" name="Selected">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+        <attributes xmi:id="_4fypaBV-EfCf5NuzPRiWMQ" value="Unsettable">
+          <type href="http://www.eclipse.org/emf/2002/Ecore#//EStructuralFeature/unsettable"/>
+        </attributes>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_4fypaRV-EfCf5NuzPRiWMQ" origin="_4fypZRV-EfCf5NuzPRiWMQ" image="_4fypZxV-EfCf5NuzPRiWMQ"/>
+  </units>
+  <units xsi:type="henshin:PriorityUnit" xmi:id="_4fypahV-EfCf5NuzPRiWMQ" name="mainUnit" subUnits="_4fypYRV-EfCf5NuzPRiWMQ">
+    <parameters xmi:id="_4fypaxV-EfCf5NuzPRiWMQ" name="selectedEObject">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </parameters>
+    <parameters xmi:id="_4fypbBV-EfCf5NuzPRiWMQ" name="Unsettable">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    </parameters>
+    <parameterMappings xmi:id="_4fypbRV-EfCf5NuzPRiWMQ" source="_4fypaxV-EfCf5NuzPRiWMQ" target="_4fypYhV-EfCf5NuzPRiWMQ"/>
+    <parameterMappings xmi:id="_4fypbhV-EfCf5NuzPRiWMQ" source="_4fypbBV-EfCf5NuzPRiWMQ" target="_4fypYxV-EfCf5NuzPRiWMQ"/>
+  </units>
+</henshin:Module>

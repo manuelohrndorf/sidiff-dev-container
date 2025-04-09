@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_4iA28BV-EfCf5NuzPRiWMQ" name="SET_ATTRIBUTE_EReference_Transient" description="Sets EReference Transient">
+  <imports href="http://www.eclipse.org/emf/2002/Ecore#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_4iA28RV-EfCf5NuzPRiWMQ" name="setEReferenceTransient" description="Sets the EAttribute transient">
+    <parameters xmi:id="_4iA28hV-EfCf5NuzPRiWMQ" name="Selected" kind="IN">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </parameters>
+    <parameters xmi:id="_4iA28xV-EfCf5NuzPRiWMQ" name="Transient" kind="OUT">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    </parameters>
+    <lhs xmi:id="_4iA29BV-EfCf5NuzPRiWMQ" name="Lhs">
+      <nodes xmi:id="_4iA29RV-EfCf5NuzPRiWMQ" name="Selected">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_4iA29hV-EfCf5NuzPRiWMQ" name="Rhs">
+      <nodes xmi:id="_4iA29xV-EfCf5NuzPRiWMQ" name="Selected">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+        <attributes xmi:id="_4iA2-BV-EfCf5NuzPRiWMQ" value="Transient">
+          <type href="http://www.eclipse.org/emf/2002/Ecore#//EStructuralFeature/transient"/>
+        </attributes>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_4iA2-RV-EfCf5NuzPRiWMQ" origin="_4iA29RV-EfCf5NuzPRiWMQ" image="_4iA29xV-EfCf5NuzPRiWMQ"/>
+  </units>
+  <units xsi:type="henshin:PriorityUnit" xmi:id="_4iA2-hV-EfCf5NuzPRiWMQ" name="mainUnit" subUnits="_4iA28RV-EfCf5NuzPRiWMQ">
+    <parameters xmi:id="_4iA2-xV-EfCf5NuzPRiWMQ" name="selectedEObject">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </parameters>
+    <parameters xmi:id="_4iA2_BV-EfCf5NuzPRiWMQ" name="Transient">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    </parameters>
+    <parameterMappings xmi:id="_4iA2_RV-EfCf5NuzPRiWMQ" source="_4iA2-xV-EfCf5NuzPRiWMQ" target="_4iA28hV-EfCf5NuzPRiWMQ"/>
+    <parameterMappings xmi:id="_4iA2_hV-EfCf5NuzPRiWMQ" source="_4iA2_BV-EfCf5NuzPRiWMQ" target="_4iA28xV-EfCf5NuzPRiWMQ"/>
+  </units>
+</henshin:Module>

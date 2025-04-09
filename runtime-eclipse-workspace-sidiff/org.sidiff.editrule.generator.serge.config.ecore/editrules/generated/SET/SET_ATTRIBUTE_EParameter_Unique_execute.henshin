@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_4lkhQBV-EfCf5NuzPRiWMQ" name="SET_ATTRIBUTE_EParameter_Unique" description="Sets EParameter Unique">
+  <imports href="http://www.eclipse.org/emf/2002/Ecore#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_4lkhQRV-EfCf5NuzPRiWMQ" name="setEParameterUnique" description="Sets the EAttribute unique">
+    <parameters xmi:id="_4lkhQhV-EfCf5NuzPRiWMQ" name="Selected" kind="IN">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+    </parameters>
+    <parameters xmi:id="_4lkhQxV-EfCf5NuzPRiWMQ" name="Unique" kind="OUT">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    </parameters>
+    <lhs xmi:id="_4lkhRBV-EfCf5NuzPRiWMQ" name="Lhs">
+      <nodes xmi:id="_4lkhRRV-EfCf5NuzPRiWMQ" name="Selected">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_4lkhRhV-EfCf5NuzPRiWMQ" name="Rhs">
+      <nodes xmi:id="_4lkhRxV-EfCf5NuzPRiWMQ" name="Selected">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+        <attributes xmi:id="_4lkhSBV-EfCf5NuzPRiWMQ" value="Unique">
+          <type href="http://www.eclipse.org/emf/2002/Ecore#//ETypedElement/unique"/>
+        </attributes>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_4lkhSRV-EfCf5NuzPRiWMQ" origin="_4lkhRRV-EfCf5NuzPRiWMQ" image="_4lkhRxV-EfCf5NuzPRiWMQ"/>
+  </units>
+  <units xsi:type="henshin:PriorityUnit" xmi:id="_4lkhShV-EfCf5NuzPRiWMQ" name="mainUnit" subUnits="_4lkhQRV-EfCf5NuzPRiWMQ">
+    <parameters xmi:id="_4lkhSxV-EfCf5NuzPRiWMQ" name="selectedEObject">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+    </parameters>
+    <parameters xmi:id="_4lkhTBV-EfCf5NuzPRiWMQ" name="Unique">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    </parameters>
+    <parameterMappings xmi:id="_4lkhTRV-EfCf5NuzPRiWMQ" source="_4lkhSxV-EfCf5NuzPRiWMQ" target="_4lkhQhV-EfCf5NuzPRiWMQ"/>
+    <parameterMappings xmi:id="_4lkhThV-EfCf5NuzPRiWMQ" source="_4lkhTBV-EfCf5NuzPRiWMQ" target="_4lkhQxV-EfCf5NuzPRiWMQ"/>
+  </units>
+</henshin:Module>

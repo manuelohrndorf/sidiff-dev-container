@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_4lWe0BV-EfCf5NuzPRiWMQ" name="SET_ATTRIBUTE_EStringToStringMapEntry_Key" description="Sets EStringToStringMapEntry Key">
+  <imports href="http://www.eclipse.org/emf/2002/Ecore#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_4lWe0RV-EfCf5NuzPRiWMQ" name="setEStringToStringMapEntryKey" description="Sets the EAttribute key">
+    <parameters xmi:id="_4lWe0hV-EfCf5NuzPRiWMQ" name="Selected" kind="IN">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EStringToStringMapEntry"/>
+    </parameters>
+    <parameters xmi:id="_4lWe0xV-EfCf5NuzPRiWMQ" name="Key" kind="OUT">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <lhs xmi:id="_4lWe1BV-EfCf5NuzPRiWMQ" name="Lhs">
+      <nodes xmi:id="_4lWe1RV-EfCf5NuzPRiWMQ" name="Selected">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EStringToStringMapEntry"/>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_4lWe1hV-EfCf5NuzPRiWMQ" name="Rhs">
+      <nodes xmi:id="_4lWe1xV-EfCf5NuzPRiWMQ" name="Selected">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EStringToStringMapEntry"/>
+        <attributes xmi:id="_4lWe2BV-EfCf5NuzPRiWMQ" value="Key">
+          <type href="http://www.eclipse.org/emf/2002/Ecore#//EStringToStringMapEntry/key"/>
+        </attributes>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_4lWe2RV-EfCf5NuzPRiWMQ" origin="_4lWe1RV-EfCf5NuzPRiWMQ" image="_4lWe1xV-EfCf5NuzPRiWMQ"/>
+  </units>
+  <units xsi:type="henshin:PriorityUnit" xmi:id="_4lWe2hV-EfCf5NuzPRiWMQ" name="mainUnit" subUnits="_4lWe0RV-EfCf5NuzPRiWMQ">
+    <parameters xmi:id="_4lWe2xV-EfCf5NuzPRiWMQ" name="selectedEObject">
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EStringToStringMapEntry"/>
+    </parameters>
+    <parameters xmi:id="_4lWe3BV-EfCf5NuzPRiWMQ" name="Key">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <parameterMappings xmi:id="_4lWe3RV-EfCf5NuzPRiWMQ" source="_4lWe2xV-EfCf5NuzPRiWMQ" target="_4lWe0hV-EfCf5NuzPRiWMQ"/>
+    <parameterMappings xmi:id="_4lWe3hV-EfCf5NuzPRiWMQ" source="_4lWe3BV-EfCf5NuzPRiWMQ" target="_4lWe0xV-EfCf5NuzPRiWMQ"/>
+  </units>
+</henshin:Module>
