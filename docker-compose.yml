@@ -16,13 +16,13 @@ services:
       # See Dockerfile for configuration description:
       # - ./eclipse-workspace:/config/workspace/eclipse-workspace
       - ./eclipse-workspace/.metadata/version.ini:/config/workspace/eclipse-workspace/.metadata/version.ini
-      - ./eclipse-workspace/.metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml:/config/workspace/eclipse-workspace/.metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml
-      - ./eclipse-workspace/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi:/config/workspace/eclipse-workspace/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
       - ./eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/:/config/workspace/eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/
-      - ./eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/0.snap:/config/workspace/eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/0.snap
+      - ./eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/:/config/workspace/eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/
       - ./eclipse-workspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.egit.core.prefs:/config/workspace/eclipse-workspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.egit.core.prefs
       - ./eclipse-workspace/.metadata/.plugins/org.eclipse.debug.core/.launches/Eclipse-SiDiff.launch:/config/workspace/eclipse-workspace/.metadata/.plugins/org.eclipse.debug.core/.launches/Eclipse-SiDiff.launch
       - ./eclipse-workspace/.metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml:/config/workspace/eclipse-workspace/.metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml
+      - ./eclipse-workspace/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi:/config/workspace/eclipse-workspace/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
+      - ./eclipse-workspace/.metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml:/config/workspace/eclipse-workspace/.metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml
     environment:
       - LIBGL_ALWAYS_SOFTWARE=1  # enable software rendering for the desktop
       - PUID=1000 # user PUID
