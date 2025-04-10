@@ -7,6 +7,10 @@ The related repositories for this project can be found at:
 - [sidiff-matching](https://github.com/manuelohrndorf/sidiff-matching)
 - [sidiff-lifting](https://github.com/manuelohrndorf/sidiff-lifting)
 
+The release history of the project can be found here:
+
+- [sidiff-releases)](https://github.com/manuelohrndorf/sidiff-releases)
+
 To setup the Dev-Container:
 
 1. Install [Docker (Desktop) (including Docker Compose)](https://docs.docker.com/get-started/get-docker/)
