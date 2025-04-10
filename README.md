@@ -9,7 +9,7 @@ The related repositories for this project can be found at:
 
 The release history of the project can be found here:
 
-- [sidiff-releases)](https://github.com/manuelohrndorf/sidiff-releases)
+- [sidiff-releases](https://github.com/manuelohrndorf/sidiff-releases)
 
 To setup the Dev-Container:
 
